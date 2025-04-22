@@ -1,0 +1,555 @@
+Sequence   		tRNA    	Bounds  	tRNA	Anti	Intron Bounds	Inf	Hit	      
+Name       	tRNA #	Begin   	End     	Type	Codon	Begin	End	Score	Origin	Note
+--------   	------	-----   	------  	----	-----	-----	----	------	------	------
+scaffold_1 	1	2557536 	2557607 	Glu	CTC	0	0	25.2	Inf	pseudo
+scaffold_1 	2	2644750 	2644820 	Cys	GCA	0	0	49.2	Inf	
+scaffold_1 	3	3477190 	3477266 	Arg	TCT	0	0	28.0	Inf	pseudo
+scaffold_1 	4	4163517 	4163590 	Glu	TTC	0	0	22.1	Inf	pseudo
+scaffold_1 	5	7718996 	7719067 	Cys	GCA	0	0	81.4	Inf	
+scaffold_1 	6	11485172	11485244	Lys	CTT	0	0	86.9	Inf	
+scaffold_1 	7	11880510	11880581	Gln	CTG	0	0	68.5	Inf	
+scaffold_1 	8	11885337	11885408	Gln	CTG	0	0	68.5	Inf	
+scaffold_1 	9	11886193	11886264	Gln	CTG	0	0	68.5	Inf	
+scaffold_1 	10	11886388	11886459	Gln	CTG	0	0	68.5	Inf	
+scaffold_1 	11	11887007	11887078	Gln	CTG	0	0	68.5	Inf	
+scaffold_1 	12	12486236	12486317	Leu	AAG	0	0	68.1	Inf	
+scaffold_1 	13	12714621	12714702	Leu	AAG	0	0	69.4	Inf	
+scaffold_1 	14	12984328	12984409	Leu	AAG	0	0	68.4	Inf	
+scaffold_1 	15	12717925	12717844	Leu	AAG	0	0	67.1	Inf	
+scaffold_1 	16	12708701	12708620	Leu	AAG	0	0	69.4	Inf	
+scaffold_1 	17	12707126	12707045	Leu	AAG	0	0	68.1	Inf	
+scaffold_1 	18	12078332	12078260	Gln	TTG	0	0	76.7	Inf	
+scaffold_1 	19	11899741	11899670	Gln	CTG	0	0	72.7	Inf	
+scaffold_1 	20	11888410	11888339	Gln	TTG	0	0	49.5	Inf	
+scaffold_1 	21	11222594	11222522	Lys	CTT	0	0	89.6	Inf	
+scaffold_1 	22	6585047 	6584974 	Arg	TCT	6585014	6585010	22.3	Inf	pseudo
+scaffold_1 	23	5402409 	5402337 	Arg	TCT	0	0	55.4	Inf	
+scaffold_1 	24	3719054 	3718980 	Arg	CCT	0	0	25.1	Inf	pseudo
+scaffold_1 	25	3476337 	3476262 	Glu	TTC	0	0	41.3	Inf	
+scaffold_2 	1	85924   	86006   	Cys	GCA	0	0	27.2	Inf	pseudo
+scaffold_2 	2	828683  	828755  	Ala	AGC	0	0	55.2	Inf	
+scaffold_2 	3	1398663 	1398745 	Tyr	GTA	1398700	1398709	80.3	Inf	
+scaffold_2 	4	2907321 	2907393 	Met	CAT	0	0	75.3	Inf	
+scaffold_2 	5	3161623 	3161696 	Lys	CTT	0	0	87.1	Inf	
+scaffold_2 	6	3162053 	3162126 	Lys	CTT	0	0	74.5	Inf	
+scaffold_2 	7	6231085 	6231157 	Arg	TCT	0	0	32.5	Inf	
+scaffold_2 	8	7069035 	7069108 	Asn	GTT	0	0	82.9	Inf	
+scaffold_2 	9	9613792 	9613864 	Arg	ACG	0	0	64.8	Inf	
+scaffold_2 	10	9614418 	9614490 	Arg	ACG	0	0	72.6	Inf	
+scaffold_2 	11	11951355	11951274	Glu	TTC	0	0	22.0	Inf	pseudo
+scaffold_2 	12	11387194	11387123	Asp	GTC	0	0	59.5	Inf	
+scaffold_2 	13	11384751	11384680	Asp	GTC	0	0	59.5	Inf	
+scaffold_2 	14	11384517	11384446	Asp	GTC	0	0	59.5	Inf	
+scaffold_2 	15	11384293	11384222	Asp	GTC	0	0	59.5	Inf	
+scaffold_2 	16	11098354	11098282	Thr	TGT	0	0	79.8	Inf	
+scaffold_2 	17	11096135	11096064	Thr	TGT	0	0	80.2	Inf	
+scaffold_2 	18	9738704 	9738632 	Arg	ACG	0	0	72.6	Inf	
+scaffold_2 	19	9732387 	9732315 	Arg	ACG	0	0	73.7	Inf	
+scaffold_2 	20	8920305 	8920233 	Arg	ACG	0	0	72.6	Inf	
+scaffold_2 	21	6629048 	6628958 	Thr	CGT	0	0	29.3	Inf	pseudo
+scaffold_2 	22	6320284 	6320197 	Ser	TGA	0	0	43.2	Inf	
+scaffold_2 	23	6175235 	6175163 	Ala	TGC	0	0	28.0	Inf	pseudo
+scaffold_2 	24	5977398 	5977323 	Undet	NNN	0	0	35.6	Inf	
+scaffold_2 	25	5864083 	5864011 	Gly	TCC	0	0	59.2	Inf	
+scaffold_2 	26	5021906 	5021844 	Arg	TCT	0	0	25.2	Inf	
+scaffold_2 	27	4595157 	4595075 	Tyr	GTA	4595120	4595111	75.0	Inf	
+scaffold_2 	28	4260887 	4260815 	Glu	TTC	0	0	29.0	Inf	pseudo
+scaffold_2 	29	3688606 	3688533 	Glu	TTC	0	0	20.8	Inf	
+scaffold_2 	30	2853994 	2853921 	Lys	CTT	0	0	87.1	Inf	
+scaffold_2 	31	2853176 	2853103 	Lys	CTT	0	0	87.1	Inf	
+scaffold_2 	32	2853006 	2852933 	Lys	CTT	0	0	87.1	Inf	
+scaffold_2 	33	2852827 	2852754 	Lys	CTT	0	0	87.1	Inf	
+scaffold_2 	34	2852649 	2852576 	Lys	CTT	0	0	87.1	Inf	
+scaffold_2 	35	2851684 	2851611 	Lys	CTT	0	0	87.1	Inf	
+scaffold_2 	36	2851510 	2851437 	Lys	CTT	0	0	87.1	Inf	
+scaffold_2 	37	2851337 	2851264 	Lys	CTT	0	0	87.1	Inf	
+scaffold_2 	38	2850910 	2850837 	Lys	CTT	0	0	75.9	Inf	
+scaffold_2 	39	2737346 	2737274 	Lys	CTT	0	0	89.6	Inf	
+scaffold_2 	40	213227  	213156  	Gln	TTG	0	0	63.1	Inf	
+scaffold_2 	41	4384    	4313    	Cys	GCA	0	0	81.4	Inf	
+scaffold_3 	1	1216350 	1216434 	Tyr	GTA	1216387	1216398	74.9	Inf	
+scaffold_3 	2	1964075 	1964147 	Arg	ACG	0	0	72.3	Inf	
+scaffold_3 	3	4656012 	4656084 	Leu	TAA	0	0	37.4	Inf	pseudo
+scaffold_3 	4	4969107 	4969179 	Arg	TCT	0	0	48.4	Inf	
+scaffold_3 	5	5105055 	5105127 	Phe	GAA	0	0	84.0	Inf	
+scaffold_3 	6	5209178 	5209251 	Arg	TCT	0	0	73.4	Inf	
+scaffold_3 	7	6212741 	6212813 	Lys	TTT	0	0	84.2	Inf	
+scaffold_3 	8	6254135 	6254209 	Val	CAC	0	0	27.4	Inf	pseudo
+scaffold_3 	9	7600769 	7600840 	Trp	CCA	0	0	75.2	Inf	
+scaffold_3 	10	8254122 	8254193 	Glu	TTC	0	0	32.9	Inf	pseudo
+scaffold_3 	11	8433966 	8434039 	Arg	TCT	0	0	31.2	Inf	
+scaffold_3 	12	8440913 	8440986 	Undet	NNN	0	0	28.5	Inf	pseudo
+scaffold_3 	13	9481025 	9481097 	Arg	CCG	0	0	63.7	Inf	
+scaffold_3 	14	9532863 	9532790 	Arg	TCT	0	0	21.8	Inf	pseudo
+scaffold_3 	15	9509444 	9509368 	Gly	TCC	0	0	37.5	Inf	
+scaffold_3 	16	9482006 	9481934 	Arg	CCG	0	0	67.2	Inf	
+scaffold_3 	17	8746821 	8746748 	Ile	GAT	0	0	79.8	Inf	
+scaffold_3 	18	8433825 	8433739 	Ser	AGA	8433789	8433781	23.1	Inf	pseudo
+scaffold_3 	19	7426936 	7426864 	Lys	TTT	0	0	81.9	Inf	
+scaffold_3 	20	7424321 	7424249 	Lys	TTT	0	0	81.9	Inf	
+scaffold_3 	21	7423874 	7423802 	Lys	TTT	0	0	81.9	Inf	
+scaffold_3 	22	6542231 	6542158 	Undet	NNN	0	0	24.1	Inf	pseudo
+scaffold_3 	23	6522024 	6521953 	Cys	GCA	0	0	81.4	Inf	
+scaffold_3 	24	6261855 	6261781 	Val	CAC	0	0	27.4	Inf	pseudo
+scaffold_3 	25	6242117 	6242045 	Lys	TTT	0	0	84.2	Inf	
+scaffold_3 	26	4153664 	4153593 	Trp	CCA	0	0	48.0	Inf	
+scaffold_3 	27	1769079 	1769007 	Arg	ACG	0	0	72.3	Inf	
+scaffold_3 	28	526916  	526841  	Sup	TTA	0	0	53.9	Inf	
+scaffold_3 	29	222704  	222633  	Gln	CTG	0	0	65.3	Inf	
+scaffold_3 	30	12441   	12359   	Leu	TAA	0	0	82.6	Inf	
+scaffold_4 	1	3742417 	3742489 	Val	CAC	0	0	76.7	Inf	
+scaffold_4 	2	3743506 	3743578 	Val	CAC	0	0	72.2	Inf	
+scaffold_4 	3	3745026 	3745098 	Val	CAC	0	0	76.7	Inf	
+scaffold_4 	4	3746008 	3746080 	Val	AAC	0	0	76.7	Inf	
+scaffold_4 	5	3934010 	3934093 	Leu	CAG	0	0	72.7	Inf	
+scaffold_4 	6	3934737 	3934820 	Leu	CAG	0	0	72.7	Inf	
+scaffold_4 	7	4004964 	4005047 	Leu	CAG	0	0	72.7	Inf	
+scaffold_4 	8	5210574 	5210649 	Glu	TTC	0	0	47.2	Inf	
+scaffold_4 	9	5679465 	5679537 	Ala	AGC	0	0	68.2	Inf	
+scaffold_4 	10	5918418 	5918484 	Arg	TCT	0	0	21.4	Inf	pseudo
+scaffold_4 	11	7101755 	7101836 	Ser	AGA	0	0	87.3	Inf	
+scaffold_4 	12	7755741 	7755811 	Glu	CTC	0	0	43.7	Inf	
+scaffold_4 	13	8254309 	8254380 	Pro	TGG	0	0	66.7	Inf	
+scaffold_4 	14	8452124 	8452205 	Ser	AGA	0	0	87.3	Inf	
+scaffold_4 	15	8835330 	8835411 	Ser	AGA	0	0	88.3	Inf	
+scaffold_4 	16	8906701 	8906773 	Phe	GAA	0	0	84.0	Inf	
+scaffold_4 	17	8825223 	8825151 	Phe	GAA	0	0	72.7	Inf	
+scaffold_4 	18	7110064 	7109983 	Ser	AGA	0	0	87.3	Inf	
+scaffold_4 	19	7108063 	7107982 	Ser	AGA	0	0	87.3	Inf	
+scaffold_4 	20	7106866 	7106785 	Ser	AGA	0	0	87.3	Inf	
+scaffold_4 	21	7106700 	7106601 	Ser	AGA	0	0	28.2	Inf	pseudo
+scaffold_4 	22	6845316 	6845244 	Lys	TTT	0	0	84.2	Inf	
+scaffold_4 	23	6844104 	6844032 	Lys	TTT	0	0	83.5	Inf	
+scaffold_4 	24	5496798 	5496715 	Arg	TCT	0	0	22.5	Inf	pseudo
+scaffold_4 	25	3937731 	3937648 	Leu	CAG	0	0	72.7	Inf	
+scaffold_4 	26	3936239 	3936156 	Leu	CAG	0	0	72.7	Inf	
+scaffold_4 	27	1824767 	1824465 	Ile	TAT	1824730	1824501	29.4	Inf	
+scaffold_5 	1	1122146 	1122216 	Gly	CCC	0	0	62.7	Inf	
+scaffold_5 	2	1122320 	1122390 	Gly	CCC	0	0	62.7	Inf	
+scaffold_5 	3	1134202 	1134273 	Pro	TGG	0	0	66.7	Inf	
+scaffold_5 	4	2170613 	2170683 	Gly	CCC	0	0	62.7	Inf	
+scaffold_5 	5	5083407 	5083479 	Arg	TCT	0	0	26.9	Inf	pseudo
+scaffold_5 	6	6274464 	6274533 	Leu	CAA	0	0	27.5	Inf	pseudo
+scaffold_5 	7	7017227 	7017295 	Trp	CCA	0	0	26.0	Inf	pseudo
+scaffold_5 	8	9244610 	9244538 	Arg	TCT	0	0	82.2	Inf	
+scaffold_5 	9	8727993 	8727924 	Ile	GAT	0	0	51.2	Inf	
+scaffold_5 	10	8176511 	8176438 	Glu	TTC	0	0	33.4	Inf	pseudo
+scaffold_5 	11	7066319 	7066246 	Glu	TTC	0	0	54.3	Inf	
+scaffold_5 	12	7000521 	7000452 	Trp	CCA	0	0	37.4	Inf	
+scaffold_5 	13	6979138 	6979069 	Trp	CCA	0	0	37.4	Inf	
+scaffold_5 	14	5929323 	5929243 	Trp	CCA	0	0	35.4	Inf	
+scaffold_5 	15	5739819 	5739739 	Trp	CCA	0	0	24.0	Inf	pseudo
+scaffold_5 	16	3300148 	3300076 	Arg	TCT	0	0	26.0	Inf	
+scaffold_5 	17	3284619 	3284538 	Ser	AGA	0	0	87.3	Inf	
+scaffold_5 	18	3073428 	3073350 	Ala	GGC	3073394	3073388	22.2	Inf	pseudo
+scaffold_5 	19	1051535 	1051466 	Undet	NNN	0	0	47.8	Inf	
+scaffold_5 	20	1050775 	1050703 	Arg	CCT	0	0	72.4	Inf	
+scaffold_5 	21	1047013 	1046942 	Gln	CTG	0	0	65.3	Inf	
+scaffold_5 	22	845998  	845926  	Arg	CCT	0	0	72.4	Inf	
+scaffold_5 	23	844697  	844625  	Arg	CCT	0	0	72.4	Inf	
+scaffold_5 	24	820864  	820792  	Arg	CCT	0	0	70.1	Inf	
+scaffold_5 	25	282130  	282060  	Gly	TCC	0	0	28.9	Inf	pseudo
+scaffold_5 	26	220542  	220471  	Trp	CCA	0	0	75.9	Inf	
+scaffold_6 	1	7380356 	7380427 	Trp	CCA	0	0	53.8	Inf	
+scaffold_6 	2	7521688 	7521760 	Thr	TGT	0	0	73.5	Inf	
+scaffold_6 	3	7524499 	7524571 	Phe	GAA	0	0	84.0	Inf	
+scaffold_6 	4	7526163 	7526235 	Phe	GAA	0	0	84.0	Inf	
+scaffold_6 	5	7686303 	7686374 	Trp	CCA	0	0	53.8	Inf	
+scaffold_6 	6	8334947 	8335017 	Undet	NNN	0	0	20.7	Inf	pseudo
+scaffold_6 	7	7522376 	7522304 	Thr	TGT	0	0	73.5	Inf	
+scaffold_6 	8	7440343 	7440272 	Trp	CCA	0	0	53.8	Inf	
+scaffold_6 	9	7341196 	7341113 	Glu	TTC	0	0	36.7	Inf	
+scaffold_6 	10	3633924 	3633849 	Gln	TTG	0	0	33.4	Inf	pseudo
+scaffold_6 	11	2596575 	2596504 	Thr	CGT	0	0	65.3	Inf	
+scaffold_6 	12	1660554 	1660483 	Thr	CGT	0	0	71.8	Inf	
+scaffold_6 	13	1613453 	1613382 	Thr	CGT	0	0	68.1	Inf	
+scaffold_7 	1	1478053 	1478134 	Leu	AAG	0	0	68.1	Inf	
+scaffold_7 	2	1910696 	1910786 	Tyr	GTA	1910739	1910750	27.9	Inf	
+scaffold_7 	3	5626665 	5626737 	Arg	TCT	0	0	21.6	Inf	pseudo
+scaffold_7 	4	5636183 	5636262 	Trp	CCA	5636219	5636226	22.2	Inf	pseudo
+scaffold_7 	5	8080179 	8080260 	Ser	GCT	0	0	88.4	Inf	
+scaffold_7 	6	8123299 	8123380 	Ser	GCT	0	0	88.4	Inf	
+scaffold_7 	7	5866843 	5866771 	Thr	AGT	0	0	77.8	Inf	
+scaffold_7 	8	5862232 	5862160 	Thr	AGT	0	0	77.8	Inf	
+scaffold_7 	9	5862139 	5862065 	Thr	AGT	0	0	26.0	Inf	pseudo
+scaffold_7 	10	5818919 	5818847 	Thr	AGT	0	0	69.7	Inf	
+scaffold_7 	11	5817916 	5817844 	Thr	AGT	0	0	75.2	Inf	
+scaffold_7 	12	5816561 	5816489 	Thr	AGT	0	0	77.8	Inf	
+scaffold_7 	13	5810968 	5810896 	Thr	AGT	0	0	77.8	Inf	
+scaffold_7 	14	5808276 	5808204 	Thr	AGT	0	0	64.7	Inf	
+scaffold_8 	1	2121813 	2121894 	Ser	TGA	0	0	91.5	Inf	
+scaffold_8 	2	2125350 	2125431 	Ser	TGA	0	0	89.3	Inf	
+scaffold_8 	3	2130133 	2130214 	Ser	TGA	0	0	91.8	Inf	
+scaffold_8 	4	3132463 	3132535 	Val	CAC	0	0	82.7	Inf	
+scaffold_8 	5	3134152 	3134224 	Val	CAC	0	0	82.7	Inf	
+scaffold_8 	6	3135700 	3135771 	Glu	CTC	0	0	64.7	Inf	
+scaffold_8 	7	3137857 	3137929 	Val	CAC	0	0	82.7	Inf	
+scaffold_8 	8	3738657 	3738728 	Glu	CTC	0	0	64.7	Inf	
+scaffold_8 	9	3799312 	3799383 	Glu	CTC	0	0	64.7	Inf	
+scaffold_8 	10	3977309 	3977380 	Glu	TTC	0	0	27.9	Inf	pseudo
+scaffold_8 	11	4163157 	4163229 	Val	TAC	0	0	78.4	Inf	
+scaffold_8 	12	4922928 	4922999 	Thr	TGT	0	0	76.9	Inf	
+scaffold_8 	13	5256357 	5256430 	Leu	CAA	0	0	20.0	Inf	pseudo
+scaffold_8 	14	6249372 	6249445 	Trp	CCA	0	0	44.1	Inf	pseudo
+scaffold_8 	15	7241419 	7241490 	iMet	CAT	0	0	58.0	Inf	
+scaffold_8 	16	8191974 	8191902 	Val	CAC	0	0	75.9	Inf	
+scaffold_8 	17	7381230 	7381158 	Arg	TCT	0	0	81.9	Inf	
+scaffold_8 	18	6875736 	6875665 	iMet	CAT	0	0	58.0	Inf	
+scaffold_8 	19	6834682 	6834611 	iMet	CAT	0	0	58.0	Inf	
+scaffold_8 	20	6020270 	6020195 	Trp	CCA	0	0	28.7	Inf	pseudo
+scaffold_8 	21	5343747 	5343639 	Leu	CAA	5343709	5343685	74.4	Inf	
+scaffold_8 	22	3407322 	3407250 	Ile	GAT	0	0	83.1	Inf	
+scaffold_8 	23	3002270 	3002199 	Glu	CTC	0	0	64.7	Inf	
+scaffold_8 	24	3001555 	3001484 	Glu	CTC	0	0	60.0	Inf	
+scaffold_8 	25	2999759 	2999688 	Glu	CTC	0	0	64.7	Inf	
+scaffold_8 	26	1989872 	1989797 	Glu	TTC	0	0	20.1	Inf	pseudo
+scaffold_8 	27	973269  	973199  	Gly	GCC	0	0	82.0	Inf	
+scaffold_9 	1	1085485 	1085568 	Leu	CAG	0	0	77.3	Inf	
+scaffold_9 	2	3376174 	3376251 	Ala	CGC	0	0	45.2	Inf	
+scaffold_9 	3	4124007 	4124079 	Glu	TTC	0	0	28.3	Inf	pseudo
+scaffold_9 	4	4135792 	4135873 	Ser	CGA	0	0	94.7	Inf	
+scaffold_9 	5	6435284 	6435358 	Leu	CAA	0	0	25.0	Inf	pseudo
+scaffold_9 	6	6780923 	6780994 	Leu	CAA	0	0	22.0	Inf	pseudo
+scaffold_9 	7	7550719 	7550790 	Gly	TCC	0	0	58.4	Inf	
+scaffold_9 	8	7552800 	7552871 	Gly	TCC	0	0	57.4	Inf	
+scaffold_9 	9	8879412 	8879484 	Gly	TCC	0	0	34.5	Inf	pseudo
+scaffold_9 	10	8768531 	8768459 	Gly	TCC	0	0	25.8	Inf	pseudo
+scaffold_9 	11	7957474 	7957401 	Gly	TCC	0	0	23.7	Inf	pseudo
+scaffold_9 	12	7751239 	7751167 	Glu	TTC	0	0	40.2	Inf	pseudo
+scaffold_9 	13	6551526 	6551454 	Arg	CCT	0	0	71.4	Inf	
+scaffold_9 	14	6093366 	6093294 	Trp	CCA	0	0	25.7	Inf	pseudo
+scaffold_9 	15	5640388 	5640322 	Trp	CCA	0	0	21.8	Inf	pseudo
+scaffold_9 	16	5166550 	5166478 	Ala	AGC	0	0	62.5	Inf	
+scaffold_9 	17	5165741 	5165665 	Ala	AGC	5165704	5165701	48.2	Inf	
+scaffold_9 	18	5164926 	5164850 	Ala	AGC	5164889	5164886	48.2	Inf	
+scaffold_9 	19	5164117 	5164045 	Ala	AGC	0	0	62.5	Inf	
+scaffold_9 	20	5163317 	5163245 	Ala	AGC	0	0	62.5	Inf	
+scaffold_9 	21	5162530 	5162458 	Ala	AGC	0	0	62.5	Inf	
+scaffold_9 	22	5161723 	5161647 	Ala	AGC	5161686	5161683	48.0	Inf	
+scaffold_9 	23	5160919 	5160847 	Ala	AGC	0	0	62.5	Inf	
+scaffold_9 	24	5160115 	5160043 	Ala	AGC	0	0	62.5	Inf	
+scaffold_9 	25	5158886 	5158812 	Ala	AGC	0	0	38.5	Inf	
+scaffold_9 	26	5158078 	5158002 	Ala	AGC	5158041	5158038	55.5	Inf	
+scaffold_9 	27	5156829 	5156755 	Ala	AGC	0	0	38.5	Inf	
+scaffold_9 	28	5156021 	5155945 	Ala	AGC	5155984	5155981	55.5	Inf	
+scaffold_9 	29	1855824 	1855753 	Asp	GTC	0	0	49.7	Inf	
+scaffold_9 	30	1854887 	1854816 	Asp	GTC	0	0	49.7	Inf	
+scaffold_9 	31	115577  	115506  	Glu	TTC	0	0	23.3	Inf	
+scaffold_10	1	2247296 	2247351 	Undet	NNN	0	0	24.0	Inf	pseudo
+scaffold_10	2	2318979 	2319036 	Ile	GAT	0	0	30.0	Inf	pseudo
+scaffold_10	3	3707173 	3707245 	Arg	TCT	0	0	28.0	Inf	
+scaffold_10	4	4751420 	4751493 	Glu	TTC	0	0	25.9	Inf	pseudo
+scaffold_10	5	6504723 	6504792 	Gly	TCC	0	0	26.4	Inf	pseudo
+scaffold_10	6	7276810 	7276884 	Undet	NNN	0	0	27.7	Inf	pseudo
+scaffold_10	7	6788296 	6788230 	Gly	TCC	0	0	22.5	Inf	pseudo
+scaffold_10	8	6767563 	6767485 	Gly	TCC	0	0	33.8	Inf	
+scaffold_10	9	3859381 	3859309 	Arg	TCT	0	0	78.9	Inf	
+scaffold_10	10	2993839 	2993768 	Trp	CCA	0	0	75.9	Inf	
+scaffold_10	11	2993639 	2993568 	Trp	CCA	0	0	78.4	Inf	
+scaffold_10	12	2993444 	2993373 	Trp	CCA	0	0	42.9	Inf	
+scaffold_10	13	2993085 	2993014 	Trp	CCA	0	0	75.3	Inf	
+scaffold_10	14	926662  	926590  	Glu	TTC	0	0	31.7	Inf	pseudo
+scaffold_10	15	790812  	790740  	Phe	GAA	0	0	88.4	Inf	
+scaffold_10	16	521828  	521756  	Lys	CTT	0	0	89.6	Inf	
+scaffold_11	1	350948  	351024  	Arg	TCT	0	0	20.9	Inf	
+scaffold_11	2	858521  	858592  	Glu	CTC	0	0	61.8	Inf	
+scaffold_11	3	2359647 	2359718 	Gly	TCC	0	0	57.7	Inf	
+scaffold_11	4	2740731 	2740805 	Arg	TCT	0	0	37.7	Inf	pseudo
+scaffold_11	5	4459597 	4459669 	Sup	TCA	0	0	38.8	Inf	pseudo
+scaffold_11	6	5094374 	5094448 	Arg	TCT	0	0	34.7	Inf	pseudo
+scaffold_11	7	5210808 	5210893 	Ile	TAT	5210846	5210857	65.7	Inf	
+scaffold_11	8	5431842 	5431914 	Arg	TCG	0	0	73.3	Inf	
+scaffold_11	9	5445483 	5445555 	Arg	TCG	0	0	69.3	Inf	
+scaffold_11	10	5447973 	5448045 	Arg	TCG	0	0	67.0	Inf	
+scaffold_11	11	5759859 	5759928 	Undet	NNN	0	0	48.9	Inf	
+scaffold_11	12	6738276 	6738347 	His	GTG	0	0	68.2	Inf	
+scaffold_11	13	6740385 	6740456 	His	GTG	0	0	68.2	Inf	
+scaffold_11	14	6743733 	6743804 	His	GTG	0	0	68.2	Inf	
+scaffold_11	15	6744814 	6744885 	His	GTG	0	0	68.2	Inf	
+scaffold_11	16	7255737 	7255808 	His	GTG	0	0	60.2	Inf	
+scaffold_11	17	7263047 	7263118 	Glu	TTC	0	0	49.2	Inf	
+scaffold_11	18	7531779 	7531851 	Arg	TCT	0	0	82.2	Inf	
+scaffold_11	19	8557150 	8557079 	Glu	TTC	0	0	64.8	Inf	
+scaffold_11	20	8197039 	8196967 	Thr	AGT	0	0	70.0	Inf	
+scaffold_11	21	6696198 	6696127 	Gly	TCC	0	0	57.7	Inf	
+scaffold_11	22	6003400 	6003329 	His	GTG	0	0	68.2	Inf	
+scaffold_11	23	5441540 	5441468 	Arg	TCG	0	0	73.3	Inf	
+scaffold_11	24	5437284 	5437212 	Arg	TCG	0	0	68.6	Inf	
+scaffold_11	25	5153079 	5153008 	Glu	TTC	0	0	27.8	Inf	pseudo
+scaffold_11	26	3151060 	3150991 	Cys	GCA	0	0	30.5	Inf	pseudo
+scaffold_11	27	3066153 	3066070 	Cys	GCA	0	0	27.5	Inf	
+scaffold_11	28	2201987 	2201914 	Arg	TCT	0	0	56.6	Inf	
+scaffold_12	1	1885990 	1886063 	Asn	GTT	0	0	82.9	Inf	
+scaffold_12	2	1887322 	1887394 	Tyr	GTA	0	0	52.2	Inf	
+scaffold_12	3	2728830 	2728903 	Asn	GTT	0	0	82.9	Inf	
+scaffold_12	4	2732713 	2732786 	Asn	GTT	0	0	78.5	Inf	
+scaffold_12	5	2734270 	2734343 	Asn	GTT	0	0	83.5	Inf	
+scaffold_12	6	2735828 	2735901 	Asn	GTT	0	0	78.1	Inf	
+scaffold_12	7	3113374 	3113447 	Asn	GTT	0	0	82.9	Inf	
+scaffold_12	8	3115721 	3115794 	Asn	GTT	0	0	83.5	Inf	
+scaffold_12	9	3880657 	3880729 	Arg	TCT	0	0	37.8	Inf	pseudo
+scaffold_12	10	4229359 	4229432 	Arg	TCT	0	0	20.3	Inf	pseudo
+scaffold_12	11	4334416 	4334487 	Sup	TTA	0	0	20.4	Inf	pseudo
+scaffold_12	12	6495971 	6496043 	Thr	AGT	0	0	77.8	Inf	
+scaffold_12	13	7870364 	7870469 	Ser	CGA	0	0	27.0	Inf	pseudo
+scaffold_12	14	8317632 	8317704 	Glu	TTC	0	0	42.0	Inf	
+scaffold_12	15	4324116 	4324044 	Gly	TCC	0	0	20.6	Inf	pseudo
+scaffold_12	16	1270028 	1269956 	Cys	GCA	0	0	65.6	Inf	
+scaffold_12	17	1268385 	1268313 	Val	GAC	0	0	65.9	Inf	
+scaffold_13	1	1189304 	1189376 	Cys	GCA	0	0	38.5	Inf	
+scaffold_13	2	2598067 	2598155 	Gly	TCC	0	0	21.0	Inf	pseudo
+scaffold_13	3	2995012 	2995084 	Arg	TCT	0	0	35.0	Inf	pseudo
+scaffold_13	4	3528895 	3528966 	Asp	GTC	0	0	68.6	Inf	
+scaffold_13	5	3535752 	3535823 	Asp	GTC	0	0	68.6	Inf	
+scaffold_13	6	3538362 	3538433 	Asp	GTC	0	0	68.6	Inf	
+scaffold_13	7	4616644 	4616714 	Gly	GCC	0	0	82.0	Inf	
+scaffold_13	8	7779291 	7779362 	Glu	TTC	0	0	64.8	Inf	
+scaffold_13	9	7781298 	7781369 	Glu	TTC	0	0	64.8	Inf	
+scaffold_13	10	7782835 	7782906 	Glu	TTC	0	0	64.8	Inf	
+scaffold_13	11	7783002 	7783073 	Glu	TTC	0	0	64.8	Inf	
+scaffold_13	12	8456139 	8456069 	Gly	GCC	0	0	82.0	Inf	
+scaffold_13	13	7843842 	7843771 	Ala	CGC	0	0	80.3	Inf	
+scaffold_13	14	7843689 	7843618 	Ala	CGC	0	0	80.3	Inf	
+scaffold_13	15	7837376 	7837304 	Ala	AGC	0	0	68.2	Inf	
+scaffold_13	16	7837235 	7837163 	Ala	AGC	0	0	57.2	Inf	
+scaffold_13	17	7836510 	7836438 	Ala	AGC	0	0	59.7	Inf	
+scaffold_13	18	7835724 	7835652 	Ala	AGC	0	0	59.7	Inf	
+scaffold_13	19	7834997 	7834925 	Ala	AGC	0	0	59.7	Inf	
+scaffold_13	20	7833750 	7833678 	Ala	AGC	0	0	59.7	Inf	
+scaffold_13	21	7833593 	7833521 	Ala	AGC	0	0	51.6	Inf	
+scaffold_13	22	7674293 	7674222 	Ala	TGC	0	0	83.0	Inf	
+scaffold_13	23	7672579 	7672508 	Ala	TGC	0	0	83.0	Inf	
+scaffold_13	24	7671461 	7671390 	Ala	TGC	0	0	84.8	Inf	
+scaffold_13	25	7640311 	7640240 	Ala	TGC	0	0	83.0	Inf	
+scaffold_13	26	7270576 	7270495 	Ser	GCT	0	0	88.4	Inf	
+scaffold_13	27	7268315 	7268234 	Ser	GCT	0	0	88.4	Inf	
+scaffold_13	28	7264458 	7264377 	Ser	GCT	0	0	88.4	Inf	
+scaffold_13	29	6470018 	6469946 	Gln	TTG	0	0	79.2	Inf	
+scaffold_13	30	5966233 	5966160 	Arg	TCT	0	0	37.1	Inf	
+scaffold_13	31	3989542 	3989467 	Ala	GGC	3989505	3989501	43.4	Inf	pseudo
+scaffold_13	32	3541250 	3541179 	Asp	GTC	0	0	68.6	Inf	
+scaffold_13	33	2505427 	2505355 	Gly	TCC	0	0	26.6	Inf	pseudo
+scaffold_13	34	1934959 	1934888 	Gly	TCC	0	0	27.9	Inf	pseudo
+scaffold_13	35	287259  	287180  	His	GTG	0	0	43.4	Inf	
+scaffold_14	1	394067  	394137  	Gly	GCC	0	0	82.0	Inf	
+scaffold_14	2	397914  	397984  	Gly	GCC	0	0	82.0	Inf	
+scaffold_14	3	399252  	399322  	Gly	GCC	0	0	82.0	Inf	
+scaffold_14	4	402402  	402472  	Gly	GCC	0	0	82.0	Inf	
+scaffold_14	5	404394  	404464  	Gly	GCC	0	0	82.0	Inf	
+scaffold_14	6	627033  	627116  	Leu	CAG	0	0	77.3	Inf	
+scaffold_14	7	812908  	812979  	Glu	CTC	0	0	61.8	Inf	
+scaffold_14	8	1447233 	1447305 	Met	CAT	0	0	78.0	Inf	
+scaffold_14	9	4316772 	4316853 	Gly	TCC	0	0	29.6	Inf	pseudo
+scaffold_14	10	5203206 	5203277 	Glu	TTC	0	0	64.8	Inf	
+scaffold_14	11	6360763 	6360833 	Gly	GCC	0	0	82.0	Inf	
+scaffold_14	12	6407052 	6407123 	Glu	TTC	0	0	57.1	Inf	
+scaffold_14	13	7529049 	7529134 	Ile	TAT	7529087	7529098	72.9	Inf	
+scaffold_14	14	7533024 	7533109 	Ile	TAT	7533062	7533073	70.6	Inf	
+scaffold_14	15	7847143 	7847071 	Gly	TCC	0	0	22.6	Inf	pseudo
+scaffold_14	16	6932536 	6932463 	Gly	TCC	0	0	37.3	Inf	
+scaffold_14	17	6907572 	6907499 	Gly	TCC	0	0	37.3	Inf	
+scaffold_14	18	6797466 	6797394 	Ala	AGC	0	0	29.4	Inf	pseudo
+scaffold_14	19	6703227 	6703153 	Glu	TTC	0	0	47.3	Inf	
+scaffold_14	20	5069555 	5069484 	Gly	TCC	0	0	57.7	Inf	
+scaffold_14	21	2841949 	2841868 	Ser	AGA	0	0	88.3	Inf	
+scaffold_14	22	1174027 	1173958 	Undet	NNN	0	0	25.4	Inf	pseudo
+scaffold_14	23	394670  	394600  	Gly	GCC	0	0	74.2	Inf	
+scaffold_14	24	392528  	392458  	Gly	GCC	0	0	77.6	Inf	
+scaffold_14	25	389585  	389515  	Gly	GCC	0	0	77.9	Inf	
+scaffold_15	1	20579   	20650   	Pro	AGG	0	0	65.4	Inf	
+scaffold_15	2	21183   	21254   	Pro	AGG	0	0	65.4	Inf	
+scaffold_15	3	414150  	414233  	Leu	CAG	0	0	78.0	Inf	
+scaffold_15	4	415880  	415963  	Leu	CAG	0	0	78.0	Inf	
+scaffold_15	5	831379  	831460  	Ser	GCT	0	0	88.4	Inf	
+scaffold_15	6	1265927 	1266008 	Leu	TAG	0	0	76.3	Inf	
+scaffold_15	7	1455925 	1456006 	Leu	TAG	0	0	52.9	Inf	
+scaffold_15	8	1824919 	1824990 	Gly	TCC	0	0	57.7	Inf	
+scaffold_15	9	2161960 	2162031 	Arg	TCT	0	0	46.6	Inf	
+scaffold_15	10	2607349 	2607422 	Asn	GTT	0	0	82.9	Inf	
+scaffold_15	11	5345401 	5345474 	Lys	CTT	0	0	87.1	Inf	
+scaffold_15	12	7113408 	7113479 	Pro	CGG	0	0	69.5	Inf	
+scaffold_15	13	7605653 	7605724 	Pro	CGG	0	0	69.5	Inf	
+scaffold_15	14	7910880 	7910809 	Pro	AGG	0	0	65.4	Inf	
+scaffold_15	15	7571071 	7571000 	Trp	CCA	0	0	36.8	Inf	pseudo
+scaffold_15	16	7094312 	7094240 	Arg	TCT	0	0	25.1	Inf	pseudo
+scaffold_15	17	6358168 	6358096 	Ile	GAT	0	0	42.9	Inf	
+scaffold_15	18	6358089 	6358008 	Tyr	GTA	0	0	52.0	Inf	
+scaffold_15	19	6357998 	6357926 	Met	CAT	0	0	35.4	Inf	
+scaffold_15	20	6357895 	6357825 	Asp	GTC	0	0	46.8	Inf	
+scaffold_15	21	5858273 	5858201 	Lys	CTT	0	0	89.6	Inf	
+scaffold_15	22	5154780 	5154709 	iMet	CAT	0	0	63.5	Inf	
+scaffold_15	23	5151181 	5151110 	iMet	CAT	0	0	63.5	Inf	
+scaffold_15	24	4588975 	4588900 	Glu	TTC	0	0	26.0	Inf	pseudo
+scaffold_15	25	2416361 	2416290 	Arg	TCT	0	0	40.5	Inf	
+scaffold_15	26	1794075 	1794004 	Pro	AGG	0	0	48.3	Inf	
+scaffold_15	27	1793850 	1793779 	Pro	AGG	0	0	65.4	Inf	
+scaffold_15	28	1792144 	1792073 	Pro	AGG	0	0	65.4	Inf	
+scaffold_15	29	1791526 	1791455 	Pro	AGG	0	0	65.4	Inf	
+scaffold_15	30	16995   	16924   	Pro	AGG	0	0	65.4	Inf	
+scaffold_16	1	1945436 	1945521 	Tyr	GTA	1945473	1945485	80.2	Inf	
+scaffold_16	2	1951466 	1951548 	Tyr	GTA	1951503	1951512	80.3	Inf	
+scaffold_16	3	2068420 	2068491 	Cys	GCA	0	0	81.4	Inf	
+scaffold_16	4	2886332 	2886404 	Met	CAT	0	0	78.0	Inf	
+scaffold_16	5	2888752 	2888824 	Met	CAT	0	0	74.9	Inf	
+scaffold_16	6	2891534 	2891606 	Met	CAT	0	0	78.0	Inf	
+scaffold_16	7	2893346 	2893418 	Met	CAT	0	0	70.6	Inf	
+scaffold_16	8	2894480 	2894552 	Met	CAT	0	0	78.0	Inf	
+scaffold_16	9	2896795 	2896867 	Met	CAT	0	0	78.0	Inf	
+scaffold_16	10	4980139 	4980220 	Ser	GCT	0	0	88.4	Inf	
+scaffold_16	11	5164796 	5164868 	Lys	CTT	0	0	88.1	Inf	
+scaffold_16	12	1991450 	1991379 	Cys	GCA	0	0	78.5	Inf	
+scaffold_16	13	1989265 	1989194 	Cys	GCA	0	0	78.5	Inf	
+scaffold_16	14	1927521 	1927439 	Tyr	GTA	1927484	1927475	80.3	Inf	
+scaffold_16	15	1913551 	1913469 	Tyr	GTA	1913514	1913505	80.3	Inf	
+scaffold_17	1	2967250 	2967316 	Arg	CCT	0	0	33.4	Inf	
+scaffold_17	2	6466948 	6467016 	Glu	TTC	0	0	26.1	Inf	pseudo
+scaffold_17	3	7608492 	7608424 	Pro	TGG	0	0	45.3	Inf	
+scaffold_17	4	5351066 	5350994 	Ala	TGC	0	0	66.2	Inf	
+scaffold_17	5	4935937 	4935863 	Ser	ACT	0	0	31.4	Inf	pseudo
+scaffold_17	6	4932241 	4932167 	Ser	ACT	0	0	31.4	Inf	pseudo
+scaffold_17	7	3848993 	3848919 	Glu	TTC	0	0	23.1	Inf	pseudo
+scaffold_18	1	998869  	998941  	Val	TAC	0	0	80.1	Inf	
+scaffold_18	2	1003885 	1003957 	Val	TAC	0	0	72.1	Inf	
+scaffold_18	3	2352625 	2352696 	Pro	TGG	0	0	68.0	Inf	
+scaffold_18	4	3583501 	3583585 	Leu	CAA	0	0	68.6	Inf	
+scaffold_18	5	3891881 	3891961 	Leu	TAA	0	0	43.0	Inf	
+scaffold_18	6	3927086 	3927166 	Leu	TAA	0	0	31.2	Inf	
+scaffold_18	7	3927180 	3927253 	Arg	TCT	0	0	20.3	Inf	
+scaffold_18	8	4330587 	4330663 	Undet	NNN	0	0	26.2	Inf	pseudo
+scaffold_18	9	4470944 	4471018 	Arg	TCT	0	0	35.3	Inf	pseudo
+scaffold_18	10	7527782 	7527853 	His	GTG	0	0	67.4	Inf	
+scaffold_18	11	5900190 	5900122 	Glu	TTC	0	0	20.5	Inf	pseudo
+scaffold_18	12	5824038 	5823957 	Ser	CGA	0	0	93.0	Inf	
+scaffold_18	13	5669708 	5669628 	Ser	TGA	0	0	38.3	Inf	
+scaffold_18	14	3766627 	3766554 	Leu	CAA	0	0	51.9	Inf	pseudo
+scaffold_18	15	3102559 	3102487 	Glu	TTC	0	0	53.8	Inf	
+scaffold_18	16	2494490 	2494419 	Pro	TGG	0	0	66.7	Inf	
+scaffold_18	17	2371948 	2371877 	Pro	TGG	0	0	66.7	Inf	
+scaffold_18	18	1924111 	1924040 	Leu	CAA	0	0	34.6	Inf	
+scaffold_18	19	288484  	288398  	SeC	TCA	0	0	128.0	Inf	
+scaffold_19	1	1430108 	1430181 	Gly	TCC	0	0	28.6	Inf	pseudo
+scaffold_19	2	4856518 	4856589 	Asp	GTC	0	0	68.6	Inf	
+scaffold_19	3	4861777 	4861848 	Asp	GTC	0	0	68.6	Inf	
+scaffold_19	4	7007968 	7008040 	Phe	GAA	0	0	88.4	Inf	
+scaffold_19	5	7008152 	7008225 	Phe	GAA	0	0	81.3	Inf	
+scaffold_19	6	7010041 	7010110 	Phe	GAA	0	0	53.3	Inf	
+scaffold_19	7	7099766 	7099680 	Leu	CAG	0	0	24.6	Inf	pseudo
+scaffold_19	8	5528986 	5528915 	Asp	GTC	0	0	68.6	Inf	
+scaffold_19	9	5256085 	5256013 	Glu	TTC	0	0	47.1	Inf	pseudo
+scaffold_19	10	4851435 	4851364 	Asp	GTC	0	0	68.6	Inf	
+scaffold_19	11	4505910 	4505837 	Val	GAC	0	0	55.3	Inf	
+scaffold_19	12	4501028 	4500956 	Phe	GAA	0	0	88.4	Inf	
+scaffold_19	13	4172370 	4172301 	Gly	TCC	0	0	25.7	Inf	
+scaffold_19	14	3771790 	3771718 	Undet	NNN	0	0	41.8	Inf	pseudo
+scaffold_19	15	2936266 	2936195 	Asp	GTC	0	0	68.6	Inf	
+scaffold_19	16	2303610 	2303533 	Gly	TCC	0	0	53.2	Inf	
+scaffold_19	17	2298689 	2298617 	Gly	TCC	0	0	54.8	Inf	
+scaffold_19	18	798312  	798241  	Glu	CTC	0	0	61.5	Inf	
+scaffold_19	19	798103  	798032  	Glu	CTC	0	0	61.5	Inf	
+scaffold_20	1	98844   	98916   	Gln	TTG	0	0	46.1	Inf	pseudo
+scaffold_20	2	1132283 	1132355 	Ile	GAT	0	0	81.9	Inf	
+scaffold_20	3	1506186 	1506258 	Ile	AAT	0	0	74.6	Inf	
+scaffold_20	4	1507040 	1507112 	Ile	AAT	0	0	74.6	Inf	
+scaffold_20	5	1508378 	1508450 	Ile	AAT	0	0	75.5	Inf	
+scaffold_20	6	1509215 	1509287 	Ile	AAT	0	0	74.6	Inf	
+scaffold_20	7	1560046 	1560117 	iMet	CAT	0	0	57.8	Inf	
+scaffold_20	8	1602398 	1602469 	iMet	CAT	0	0	57.8	Inf	
+scaffold_20	9	1629739 	1629810 	Glu	TTC	0	0	43.3	Inf	
+scaffold_20	10	1730433 	1730525 	Leu	TAG	0	0	35.7	Inf	
+scaffold_20	11	3100509 	3100580 	iMet	CAT	0	0	57.8	Inf	
+scaffold_20	12	4630056 	4630127 	Cys	GCA	0	0	28.1	Inf	pseudo
+scaffold_20	13	6163071 	6163179 	Leu	CAA	6163109	6163133	69.8	Inf	
+scaffold_20	14	6165676 	6165784 	Leu	CAA	6165714	6165738	70.2	Inf	
+scaffold_20	15	6169870 	6169978 	Leu	CAA	6169908	6169932	70.2	Inf	
+scaffold_20	16	6546895 	6546825 	Gly	ACC	0	0	21.1	Inf	pseudo
+scaffold_20	17	4638824 	4638742 	Undet	NNN	0	0	29.6	Inf	pseudo
+scaffold_20	18	3095580 	3095499 	Leu	TAA	0	0	71.5	Inf	
+scaffold_20	19	3092043 	3091962 	Leu	TAG	0	0	80.2	Inf	
+scaffold_20	20	3088626 	3088545 	Leu	TAG	0	0	79.3	Inf	
+scaffold_20	21	1119204 	1119133 	iMet	CAT	0	0	53.6	Inf	
+scaffold_20	22	1117281 	1117210 	iMet	CAT	0	0	57.8	Inf	
+scaffold_20	23	1098843 	1098772 	iMet	CAT	0	0	57.8	Inf	
+scaffold_20	24	1097809 	1097738 	iMet	CAT	0	0	57.8	Inf	
+scaffold_21	1	2290186 	2290258 	Val	AAC	0	0	77.5	Inf	
+scaffold_21	2	2291276 	2291348 	Val	AAC	0	0	77.5	Inf	
+scaffold_21	3	2292906 	2292978 	Val	AAC	0	0	68.7	Inf	
+scaffold_21	4	2295341 	2295413 	Val	AAC	0	0	77.5	Inf	
+scaffold_21	5	2296390 	2296462 	Val	AAC	0	0	77.5	Inf	
+scaffold_21	6	2344542 	2344614 	Val	AAC	0	0	77.5	Inf	
+scaffold_21	7	2345943 	2346015 	Val	AAC	0	0	77.5	Inf	
+scaffold_23	1	139687  	139759  	Arg	ACG	0	0	70.6	Inf	
+scaffold_23	2	10791   	10703   	Ser	GCT	0	0	52.2	Inf	
+scaffold_28	1	71308   	71379   	Val	GAC	0	0	69.4	Inf	
+scaffold_34	1	56631   	56718   	Ser	TGA	0	0	47.5	Inf	
+scaffold_34	2	56737   	56809   	Cys	GCA	0	0	49.6	Inf	
+scaffold_34	3	59915   	59844   	His	GTG	0	0	40.4	Inf	
+scaffold_34	4	59830   	59759   	Glu	TTC	0	0	51.1	Inf	
+scaffold_55	1	6617    	6688    	Thr	GGT	0	0	82.1	Inf	
+scaffold_55	2	22914   	22841   	Met	CAT	0	0	67.6	Inf	
+scaffold_83	1	23559   	23484   	Gln	TTG	0	0	33.4	Inf	pseudo
+scaffold_126	1	28671   	28598   	Arg	CCG	0	0	75.6	Inf	
+scaffold_165	1	4200    	4128    	Gly	TCC	0	0	59.2	Inf	
+scaffold_198	1	18659   	18742   	Cys	GCA	0	0	33.4	Inf	
+scaffold_241	1	22621   	22692   	Gln	TTG	0	0	57.0	Inf	
+scaffold_241	2	31534   	31464   	Gly	CCC	0	0	71.4	Inf	
+scaffold_241	3	1383    	1299    	Leu	TAA	0	0	63.2	Inf	
+scaffold_262	1	22485   	22413   	Gly	TCC	0	0	26.6	Inf	pseudo
+scaffold_359	1	11920   	11992   	Pro	TGG	0	0	28.2	Inf	pseudo
+scaffold_372	1	8819    	8748    	Gly	GCC	0	0	67.8	Inf	
+scaffold_395	1	2372    	2291    	Ser	AGA	0	0	78.2	Inf	
+scaffold_462	1	2586    	2514    	Ile	AAT	0	0	74.6	Inf	
+scaffold_462	2	1801    	1729    	Ile	AAT	0	0	74.6	Inf	
+scaffold_462	3	915     	843     	Ile	AAT	0	0	74.6	Inf	
+scaffold_462	4	72      	1       	Ile	AAT	0	0	68.0	Inf	
+scaffold_473	1	764     	836     	Lys	TTT	0	0	47.0	Inf	
+scaffold_473	2	1901    	1972    	Ile	GAT	0	0	45.8	Inf	
+scaffold_473	3	1978    	2059    	Tyr	GTA	0	0	52.0	Inf	
+scaffold_473	4	2069    	2141    	Met	CAT	0	0	43.1	Inf	
+scaffold_473	5	2172    	2242    	Asp	GTC	0	0	56.5	Inf	
+scaffold_473	6	2249    	2320    	Asn	GTT	0	0	56.5	Inf	
+scaffold_473	7	2330    	2403    	Leu	TAG	0	0	47.0	Inf	
+scaffold_473	8	3575    	3647    	Thr	TGT	0	0	70.0	Inf	
+scaffold_473	9	4031    	4115    	Ser	GCT	0	0	56.9	Inf	
+scaffold_473	10	4125    	4196    	Pro	TGG	0	0	28.1	Inf	pseudo
+scaffold_473	11	5710    	5781    	His	GTG	0	0	40.4	Inf	
+scaffold_473	12	5795    	5866    	Glu	TTC	0	0	51.1	Inf	
+scaffold_473	13	6975    	7045    	Arg	TCG	0	0	45.1	Inf	
+scaffold_473	14	7493    	7565    	Met	CAT	0	0	40.1	Inf	
+scaffold_473	15	7601    	7673    	Phe	GAA	0	0	62.6	Inf	
+scaffold_473	16	8867    	8938    	Gly	TCC	0	0	53.4	Inf	
+scaffold_473	17	8956    	9028    	Val	TAC	0	0	47.6	Inf	
+scaffold_473	18	13203   	13290   	Ser	TGA	0	0	47.5	Inf	
+scaffold_473	19	13309   	13381   	Cys	GCA	0	0	49.6	Inf	
+scaffold_473	20	14385   	14465   	Leu	TAA	0	0	40.6	Inf	
+scaffold_473	21	14472   	14544   	Arg	TCT	0	0	55.7	Inf	
+scaffold_473	22	15571   	15641   	Sup	TCA	0	0	35.8	Inf	pseudo
+scaffold_473	23	19140   	19212   	Ala	TGC	0	0	58.9	Inf	
+scaffold_473	24	20035   	20107   	Lys	TTT	0	0	47.0	Inf	
+scaffold_473	25	21172   	21243   	Ile	GAT	0	0	45.8	Inf	
+scaffold_473	26	21249   	21330   	Tyr	GTA	0	0	52.0	Inf	
+scaffold_473	27	21340   	21412   	Met	CAT	0	0	43.1	Inf	
+scaffold_473	28	21443   	21513   	Asp	GTC	0	0	56.5	Inf	
+scaffold_473	29	21520   	21591   	Asn	GTT	0	0	56.5	Inf	
+scaffold_473	30	21601   	21674   	Leu	TAG	0	0	47.0	Inf	
+scaffold_473	31	22846   	22918   	Thr	TGT	0	0	70.0	Inf	
+scaffold_473	32	23302   	23386   	Ser	GCT	0	0	56.9	Inf	
+scaffold_473	33	23396   	23467   	Pro	TGG	0	0	28.1	Inf	pseudo
+scaffold_556	1	9987    	9915    	Pro	TGG	0	0	28.2	Inf	pseudo
+scaffold_591	1	12997   	13069   	Phe	GAA	0	0	77.3	Inf	
+scaffold_662	1	11632   	11724   	Leu	TAG	0	0	35.7	Inf	
+scaffold_1148	1	6124    	6205    	Ser	AGA	0	0	87.3	Inf	
+scaffold_1148	2	8129    	8210    	Ser	AGA	0	0	87.3	Inf	
+scaffold_1294	1	932     	1019    	Ser	TGA	0	0	47.5	Inf	
+scaffold_1294	2	1038    	1110    	Cys	GCA	0	0	49.6	Inf	
+scaffold_1294	3	2114    	2194    	Leu	TAA	0	0	40.6	Inf	
+scaffold_1294	4	2201    	2273    	Arg	TCT	0	0	55.7	Inf	
+scaffold_1294	5	3300    	3370    	Sup	TCA	0	0	35.8	Inf	pseudo
+scaffold_1294	6	6869    	6941    	Ala	TGC	0	0	58.9	Inf	
+scaffold_1313	1	230     	301     	His	GTG	0	0	40.4	Inf	
+scaffold_1313	2	315     	386     	Glu	TTC	0	0	51.1	Inf	
+scaffold_1313	3	1495    	1565    	Arg	TCG	0	0	45.1	Inf	
+scaffold_1313	4	2013    	2085    	Met	CAT	0	0	40.1	Inf	
+scaffold_1313	5	2121    	2193    	Phe	GAA	0	0	62.6	Inf	
+scaffold_1313	6	3387    	3458    	Gly	TCC	0	0	53.4	Inf	
+scaffold_1313	7	3476    	3548    	Val	TAC	0	0	47.6	Inf	
+scaffold_1522	1	36      	109     	Arg	CCT	0	0	86.8	Inf	

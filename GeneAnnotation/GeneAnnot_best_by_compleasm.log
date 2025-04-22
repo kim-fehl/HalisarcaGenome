@@ -1,0 +1,14 @@
+/opt/Augustus/scripts/getAnnoFastaFromJoingenes.py -g /trinity/home/vasiliy.zubarev/sponge_project/Analysis/2025_01_08_BRAKER_compleasm/braker/genome.fa -f /trinity/home/vasiliy.zubarev/sponge_project/Analysis/2025_01_08_BRAKER_compleasm/braker/GeneMark-ETP/genemark.gtf -o /trinity/home/vasiliy.zubarev/sponge_project/Analysis/2025_01_08_BRAKER_compleasm/braker/bbc/genemark -s True
+/opt/compleasm_kit/compleasm.py protein -p /trinity/home/vasiliy.zubarev/sponge_project/Analysis/2025_01_08_BRAKER_compleasm/braker/bbc/genemark.aa -l metazoa_odb10 -t 48 -o /trinity/home/vasiliy.zubarev/sponge_project/Analysis/2025_01_08_BRAKER_compleasm/braker/bbc/genemark
+/opt/compleasm_kit/compleasm.py protein -p /trinity/home/vasiliy.zubarev/sponge_project/Analysis/2025_01_08_BRAKER_compleasm/braker/braker.aa -l metazoa_odb10 -t 48 -o /trinity/home/vasiliy.zubarev/sponge_project/Analysis/2025_01_08_BRAKER_compleasm/braker/bbc/braker
+/opt/compleasm_kit/compleasm.py protein -p /trinity/home/vasiliy.zubarev/sponge_project/Analysis/2025_01_08_BRAKER_compleasm/braker/augustus.hints.aa -l metazoa_odb10 -t 48 -o /trinity/home/vasiliy.zubarev/sponge_project/Analysis/2025_01_08_BRAKER_compleasm/braker/bbc/augustus
+BRAKER is missing 10.27 BUSCOs.
+GeneMark is missing 9.22 BUSCOs.
+Augustus is missing 7.65 BUSCOs.
+All BUSCOs present in augustus.hints.gtf and genemark.gtf will be added to the braker.gtf gene set.
+/opt/TSEBRA/bin/tsebra.py -k /trinity/home/vasiliy.zubarev/sponge_project/Analysis/2025_01_08_BRAKER_compleasm/braker/braker.gtf,/trinity/home/vasiliy.zubarev/sponge_project/Analysis/2025_01_08_BRAKER_compleasm/braker/bbc/augustus_genemark_keep.gtf -o /trinity/home/vasiliy.zubarev/sponge_project/Analysis/2025_01_08_BRAKER_compleasm/braker/bbc/better.gtf -q
+/opt/TSEBRA/bin/rename_gtf.py --gtf /trinity/home/vasiliy.zubarev/sponge_project/Analysis/2025_01_08_BRAKER_compleasm/braker/bbc/better_tmp.gtf --out /trinity/home/vasiliy.zubarev/sponge_project/Analysis/2025_01_08_BRAKER_compleasm/braker/bbc/better.gtf
+/opt/Augustus/scripts/getAnnoFastaFromJoingenes.py -g /trinity/home/vasiliy.zubarev/sponge_project/Analysis/2025_01_08_BRAKER_compleasm/braker/genome.fa -f /trinity/home/vasiliy.zubarev/sponge_project/Analysis/2025_01_08_BRAKER_compleasm/braker/bbc/better.gtf -o /trinity/home/vasiliy.zubarev/sponge_project/Analysis/2025_01_08_BRAKER_compleasm/braker/bbc/better -s True
+/opt/compleasm_kit/compleasm.py protein -p /trinity/home/vasiliy.zubarev/sponge_project/Analysis/2025_01_08_BRAKER_compleasm/braker/bbc/better.aa -l metazoa_odb10 -t 48 -o /trinity/home/vasiliy.zubarev/sponge_project/Analysis/2025_01_08_BRAKER_compleasm/braker/bbc/better
+The new best BRAKER gene set is /trinity/home/vasiliy.zubarev/sponge_project/Analysis/2025_01_08_BRAKER_compleasm/braker/bbc/better.gtf.
+It is missing 7.13% BUSCOs.
