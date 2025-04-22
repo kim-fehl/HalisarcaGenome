@@ -1,0 +1,40 @@
+#Transcriptomic resourses for Halisarca dujardinii genome annotation
+#SRA_ID	Source	Biological_state	Date	Replicate	Layout
+SRS5777949	IDB	frozentissue	Jul17	norep	PE250
+SRS5777948	IDB	cells	Jul17	norep	PE250
+SRS5777947	IDB	tissue	Jul17	norep	PE250
+SRS5777946	IDB	aggregates24	Nov17	norep	PE250
+SRS5777941	IDB	tissue	Nov17	norep	PE250
+SRS5777940	IDB	cells	Nov17	norep	PE250
+ERX1222364	AUSTR	adult	16	norep	PE200
+ERX1222363	AUSTR	larva	16	norep	PE200
+SRS22614306	IDB	tissue	Mar21	norep	SE50
+SRS22614305	IDB	cells	Mar21	norep	SE50
+SRS22614304	IDB	aggregates24h	Mar21	norep	SE50
+SRS9550146	IDB	aggregates24h	Jan20	rep3	SE50
+SRS9550145	IDB	cells	Jan20	rep3	SE50
+SRS9550144	IDB	tissue	Jan20	rep3	SE50
+SRS9550143	IDB	aggregates24h	Jan20	rep2	SE50
+SRS9550142	IDB	cells	Jan20	rep2	SE50
+SRS9550141	IDB	tissue	Jan20	rep2	SE50
+SRS9550140	IDB	aggregates24h	Jan20	rep1	SE50
+SRS9550154	IDB	cells	Jan20	rep1	SE50
+SRS9550153	IDB	tissue	Jan20	rep1	SE50
+SRS9550152	IDB	aggregates24h	Aug19	rep3	SE50
+SRS9550151	IDB	cells	Aug19	rep3	SE50
+SRS9550150	IDB	aggregates24h	Aug19	rep2	SE50
+SRS9550149	IDB	cells	Aug19	rep2	SE50
+SRS9550148	IDB	tissue	Aug19	rep2	SE50
+SRS9550147	IDB	aggregates24h	rep1	SE50
+SRS9550139	IDB	cells	Aug19	rep1	SE50
+SRS9550138	IDB	tissue	Aug19	rep1	SE50
+SRS5777951	IDB	aggregates24	Nov18	rep2	SE50
+SRS5777950	IDB	aggregates24	Nov18	rep1	SE50
+SRS5777942	IDB	cells	Nov18	rep3	SE50
+SRS5777953	IDB	cells	Nov18	rep2	SE50
+SRS5777952	IDB	cells	Nov18	rep1	SE50
+SRS5777945	IDB	tissue	Nov18	rep2	SE50
+SRS5777943	IDB	tissue	Nov18	rep1	SE50
+
+#IDB=Koltzov Institute of Developmental Biology RAS, Moscow
+#AUSTR=Australian National University

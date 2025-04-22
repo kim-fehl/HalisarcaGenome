@@ -1,0 +1,837 @@
+Detecting adapter sequence for read1...
+Detecting adapter sequence for read1...
+Detecting adapter sequence for read1...
+Detecting adapter sequence for read1...
+Detecting adapter sequence for read1...
+Detecting adapter sequence for read1...Detecting adapter sequence for read1...Detecting adapter sequence for read1...Detecting adapter sequence for read1...
+
+
+
+Detecting adapter sequence for read1...
+Detecting adapter sequence for read1...
+ERROR: Failed to open file: /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Data/RNA-seq//IDB_cells_Jan20_rep1_SE50.fastq.gz
+Detecting adapter sequence for read1...
+Detecting adapter sequence for read1...
+Detecting adapter sequence for read1...Detecting adapter sequence for read1...Detecting adapter sequence for read1...
+Detecting adapter sequence for read1...
+
+Detecting adapter sequence for read1...Detecting adapter sequence for read1...
+
+
+Detecting adapter sequence for read1...Detecting adapter sequence for read1...Detecting adapter sequence for read1...
+Detecting adapter sequence for read1...
+Detecting adapter sequence for read1...
+Detecting adapter sequence for read1...
+
+
+Detecting adapter sequence for read1...
+>Nextera_LMP_Read1_External_Adapter | >Illumina Multiplexing Index Sequencing Primer
+GATCGGAAGAGCACACGTCTGAACTCCAGTCAC
+
+>Nextera_LMP_Read1_External_Adapter | >Illumina Multiplexing Index Sequencing Primer>Nextera_LMP_Read1_External_Adapter | >Illumina Multiplexing Index Sequencing Primer
+
+GATCGGAAGAGCACACGTCTGAACTCCAGTCACGATCGGAAGAGCACACGTCTGAACTCCAGTCAC
+
+
+
+>Nextera_LMP_Read1_External_Adapter | >Illumina Multiplexing Index Sequencing Primer
+GATCGGAAGAGCACACGTCTGAACTCCAGTCAC
+
+No adapter detected for read1
+
+No adapter detected for read1
+
+No adapter detected for read1
+
+No adapter detected for read1
+
+No adapter detected for read1
+
+No adapter detected for read1No adapter detected for read1
+No adapter detected for read1
+
+
+
+
+No adapter detected for read1
+
+No adapter detected for read1
+
+No adapter detected for read1No adapter detected for read1No adapter detected for read1No adapter detected for read1No adapter detected for read1
+No adapter detected for read1
+No adapter detected for read1
+
+No adapter detected for read1
+No adapter detected for read1
+
+
+
+No adapter detected for read1
+
+
+
+
+No adapter detected for read1
+
+
+
+
+
+
+No adapter detected for read1
+
+
+Read1 before filtering:
+total reads: 28842090
+total bases: 1730525400
+Q20 bases: 1694587731(97.9233%)
+Q30 bases: 1651594353(95.4389%)
+
+Read1 after filtering:
+total reads: 28021795
+total bases: 1680351921
+Q20 bases: 1658565803(98.7035%)
+Q30 bases: 1626313728(96.7841%)
+
+Filtering result:
+reads passed filter: 28021795
+reads failed due to low quality: 791305
+reads failed due to too many N: 4
+reads failed due to too short: 28986
+reads with adapter trimmed: 0
+bases trimmed due to adapters: 0
+reads with polyX in 3' end: 71379
+bases trimmed in polyX tail: 1957997
+
+Duplication rate (may be overestimated since this is SE data): 64.6613%
+
+JSON report: fastp.json
+HTML report: fastp.html
+
+fastp --in1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Data/RNA-seq//IDB_tissue_Aug19_rep1_SE50.fastq.gz --out1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Analysis/2024_12_02_RNAseq_filtering/trimmed//IDB_tissue_Aug19_rep1_SE50_trimmed.fastq --cut_tail --cut_front --trim_poly_x --cut_mean_quality 20 --length_required 30 --average_qual 30 --thread 16 
+fastp v0.24.0, time used: 27 seconds
+Read1 before filtering:
+total reads: 25639808
+total bases: 1461469056
+Q20 bases: 1430635474(97.8902%)
+Q30 bases: 1394482845(95.4165%)
+
+Read1 after filtering:
+total reads: 24958829
+total bases: 1421899682
+Q20 bases: 1402381580(98.6273%)
+Q30 bases: 1374639624(96.6763%)
+
+Filtering result:
+reads passed filter: 24958829
+reads failed due to low quality: 669575
+reads failed due to too many N: 22
+reads failed due to too short: 11382
+reads with adapter trimmed: 0
+bases trimmed due to adapters: 0
+reads with polyX in 3' end: 43524
+bases trimmed in polyX tail: 850141
+
+Duplication rate (may be overestimated since this is SE data): 56.2814%
+
+JSON report: fastp.json
+HTML report: fastp.html
+
+fastp --in1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Data/RNA-seq//IDB_tissue_Jan20_rep3_SE50.fastq.gz --out1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Analysis/2024_12_02_RNAseq_filtering/trimmed//IDB_tissue_Jan20_rep3_SE50_trimmed.fastq --cut_tail --cut_front --trim_poly_x --cut_mean_quality 20 --length_required 30 --average_qual 30 --thread 16 
+fastp v0.24.0, time used: 27 seconds
+Read1 before filtering:
+total reads: 27045567
+total bases: 1622734020
+Q20 bases: 1590981883(98.0433%)
+Q30 bases: 1552608364(95.6785%)
+
+Read1 after filtering:
+total reads: 26356863
+total bases: 1580553448
+Q20 bases: 1560725389(98.7455%)
+Q30 bases: 1531324187(96.8853%)
+
+Filtering result:
+reads passed filter: 26356863
+reads failed due to low quality: 656051
+reads failed due to too many N: 0
+reads failed due to too short: 32653
+reads with adapter trimmed: 0
+bases trimmed due to adapters: 0
+reads with polyX in 3' end: 70538
+bases trimmed in polyX tail: 2111925
+
+Duplication rate (may be overestimated since this is SE data): 60.8168%
+Read1 before filtering:
+total reads: 27982179
+total bases: 1678930740
+Q20 bases: 1638224268(97.5755%)
+Q30 bases: 1581877746(94.2194%)
+
+Read1 after filtering:
+total reads: 27385378
+total bases: 1639783034
+Q20 bases: 1610410089(98.2087%)
+Q30 bases: 1562949980(95.3144%)
+
+Filtering result:
+reads passed filter: 27385378
+reads failed due to low quality: 560903
+reads failed due to too many N: 64
+reads failed due to too short: 35834
+reads with adapter trimmed: 0
+bases trimmed due to adapters: 0
+reads with polyX in 3' end: 76710
+bases trimmed in polyX tail: 2363475
+
+Duplication rate (may be overestimated since this is SE data): 56.0364%
+
+JSON report: fastp.json
+HTML report: fastp.html
+
+fastp --in1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Data/RNA-seq//IDB_aggregates24h_Aug19_rep2_SE50.fastq.gz --out1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Analysis/2024_12_02_RNAseq_filtering/trimmed//IDB_aggregates24h_Aug19_rep2_SE50_trimmed.fastq --cut_tail --cut_front --trim_poly_x --cut_mean_quality 20 --length_required 30 --average_qual 30 --thread 16 
+fastp v0.24.0, time used: 31 seconds
+
+JSON report: fastp.json
+HTML report: fastp.html
+
+fastp --in1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Data/RNA-seq//IDB_aggregates24h_Aug19_rep3_SE50.fastq.gz --out1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Analysis/2024_12_02_RNAseq_filtering/trimmed//IDB_aggregates24h_Aug19_rep3_SE50_trimmed.fastq --cut_tail --cut_front --trim_poly_x --cut_mean_quality 20 --length_required 30 --average_qual 30 --thread 16 
+fastp v0.24.0, time used: 31 seconds
+Read1 before filtering:
+total reads: 28271092
+total bases: 1413554600
+Q20 bases: 1385525857(98.0171%)
+Q30 bases: 1351102730(95.5819%)
+
+Read1 after filtering:
+total reads: 27478390
+total bases: 1373156098
+Q20 bases: 1355871452(98.7412%)
+Q30 bases: 1329894853(96.8495%)
+
+Filtering result:
+reads passed filter: 27478390
+reads failed due to low quality: 727831
+reads failed due to too many N: 113
+reads failed due to too short: 64758
+reads with adapter trimmed: 0
+bases trimmed due to adapters: 0
+reads with polyX in 3' end: 94968
+bases trimmed in polyX tail: 3326791
+
+Duplication rate (may be overestimated since this is SE data): 68.8776%
+Read1 before filtering:Read1 before filtering:
+total reads: 
+total reads: 28926736
+total bases: 1648823952
+Q20 bases: 1615448887(2750074197.9758
+%)
+Q30 bases: 
+JSON report: 1576058880total bases: fastp.json1375037050(
+95.5869
+HTML report: Q20 bases: %)fastp.html
+1348294119
+
+
+fastp --in1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Data/RNA-seq//IDB_cells_Mar21_norep_SE50.fastq.gz --out1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Analysis/2024_12_02_RNAseq_filtering/trimmed//IDB_cells_Mar21_norep_SE50_trimmed.fastq --cut_tail --cut_front --trim_poly_x --cut_mean_quality 20 --length_required 30 --average_qual 30 --thread 16 Read1 after filtering:
+total reads: (
+fastp v0.24.098.055128209993
+total bases: 1607171239
+Q20 bases: 1585633129(, time used: 98.6599%)33%) seconds
+
+
+Q30 bases: 1555105488Q30 bases: 1315455510(Read1 before filtering:
+Read1 before filtering:(95.6669%)
+
+Read1 after filtering:
+total reads: 26731817
+total bases: 1335833066total reads: 29015710
+total bases: 1653895470
+
+total reads: 96.7604
+Q20 bases: Q20 bases: 161830314628976085
+total bases: 1651636845
+Q20 bases: 1611889104(%)1319402992(Read1 before filtering:(97.5934%)
+Q30 bases: 1565867768(
+98.7701%)
+Q30 bases: 1294687659(
+total reads: 97.84894.807%)
+
+Read1 after filtering:
+total reads: 28064144
+total bases: 1598679151
+Q20 bases: 
+96.9199%)Filtering result:
+reads passed filter: 28209993
+reads failed due to low quality: 702834
+
+
+1573746360(Filtering result:
+%)
+reads failed due to too many N: 27495918
+total bases: 156726732698.4404%)
+Q30 bases: 1538709210(
+Q20 bases: 1530299193(Q30 bases: 17reads passed filter: 26731817
+96.2488%)
+
+Filtering result:
+reads passed filter: 28064144
+reads failed due to low quality: 877638
+reads failed due to too many N: 15
+reads failed due to too short: reads failed due to low quality: 694237
+reads failed due to too many N: 135
+reads failed due to too short: 74552
+reads with adapter trimmed: 034288
+reads with adapter trimmed: 0
+bases trimmed due to adapters: 
+bases trimmed due to adapters: 00
+reads with polyX in 3' end: 74065
+bases trimmed in polyX tail: 2159687
+
+reads with polyX in 3' end: 
+106489
+bases trimmed in polyX tail: 3819148
+1576710653
+Duplication rate (may be overestimated since this is SE data): 97.6412reads failed due to too short: %)(Read1 before filtering:
+Q30 bases: 
+Duplication rate (may be overestimated since this is SE data): 69.3872%
+
+64.7415%
+95.333213892
+
+JSON report: fastp.json
+HTML report: fastp.html
+
+fastp --in1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Data/RNA-seq//IDB_tissue_Mar21_norep_SE50.fastq.gz --out1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Analysis/2024_12_02_RNAseq_filtering/trimmed//IDB_tissue_Mar21_norep_SE50_trimmed.fastq --cut_tail --cut_front --trim_poly_x --cut_mean_quality 20 --length_required 30 --average_qual 30 --thread 16 
+fastp v0.24.0, time used: total reads: 148725827836 secondsreads with adapter trimmed: 
+0
+
+Read1 before filtering:Read1 before filtering:bases trimmed due to adapters: 0
+reads with polyX in 3' end: 47725
+bases trimmed in polyX tail: JSON report: fastp.json
+HTML report: fastp.html
+
+1005819
+
+Duplication rate (may be overestimated since this is SE data): 
+%)29161489
+(total bases: 94.895%)
+1662204873total reads: 67.7522%
+29027822
+total bases: 
+
+fastp --in1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Data/RNA-seq//IDB_aggregates24_Nov18_rep2_SE50.fastq.gz --out1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Analysis/2024_12_02_RNAseq_filtering/trimmed//IDB_aggregates24_Nov18_rep2_SE50_trimmed.fastq --cut_tail --cut_front --trim_poly_x --cut_mean_quality 20 --length_required 30 --average_qual 30 --thread 16 
+fastp v0.24.0, time used: 
+Q20 bases: 16231522861654585854
+Q20 bases: Read1 after filtering:
+
+36 seconds
+
+total reads: 1613319692Read1 after filtering:
+(
+total reads: (JSON report: fastp.json
+total reads: 2666810497.6506%)
+
+Q30 bases: 157779955997.506HTML report: fastp.html
+
+fastp --in1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Data/RNA-seq//IDB_aggregates24h_Jan20_rep3_SE50.fastq.gz --out1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Analysis/2024_12_02_RNAseq_filtering/trimmed//IDB_aggregates24h_Jan20_rep3_SE50_trimmed.fastq --cut_tail --cut_front --trim_poly_x --cut_mean_quality 20 --length_required 30 --average_qual 30 --thread 16 
+fastp v0.24.0, time used: 37 seconds
+%)
+(2758870828228570
+Q30 bases: 1565411843total bases: 
+total bases: 1608105297
+Q20 bases: 16553224801585587860((
+94.9221%)total bases: 1519212049
+98.5998%)
+94.6105Q20 bases: %)
+
+
+Read1 after filtering:Q30 bases: 1553651944(Read1 after filtering:1622566816Read1 before filtering:
+total reads: 96.6138
+
+total reads: 
+28090530
+Q20 bases: 1495655209total bases: 1600259653
+%)
+total reads: 28291472
+
+Filtering result:(total bases: 25604029(
+Q20 bases: 157431955398.4494%)(
+1611720351
+Q30 bases: 1462586630Q20 bases: 158690390498.379(
+reads passed filter: 28228570
+reads failed due to low quality: 767489total bases: 96.2727145942965398.0212(%)
+
+
+
+reads failed due to too many N: 17Read1 before filtering:Q20 bases: %)98.46031428333507
+reads failed due to too short: 19634
+
+
+reads with adapter trimmed: Q30 bases: Read1 before filtering:%)(0
+bases trimmed due to adapters: 01583298016
+(Filtering result:
+reads passed filter: 
+reads with polyX in 3' end: 5937597.8693total reads: %)
+30879996
+95.6489bases trimmed in polyX tail: 1341414
+%)Q30 bases: 1538001457
+Duplication rate (may be overestimated since this is SE data): Q30 bases: %)
+
+58.2961%1391749148(
+
+
+(96.1095%)
+
+Q30 bases: Filtering result:95.362526668104
+reads failed due to low quality: 796925
+reads failed due to too many N: 13
+reads failed due to too short: total bases: 1760159772Read1 before filtering:Read1 after filtering:%)
+
+total reads: 
+30876total reads: reads passed filter: 31313976
+total bases: 1565698800
+Q20 bases: 1535739829(
+Q20 bases: 1715972011(
+
+98.0865%)
+Q30 bases: 1498852946(31602811
+total bases: 180136022797.4896%)
+
+Read1 before filtering:
+95.7306%)
+
+Read1 after filtering:
+total reads: 30470842
+total bases: 1522608006
+Q20 bases: 1504103863(28090530
+1552139669(98.7847%)
+Q30 bases: 1476288393(96.9579%)
+
+Filtering result:
+reads passed filter: 30470842
+reads failed due to low quality: 778281
+total reads: 
+Q20 bases: 1756519747Q30 bases: 1664285080reads failed due to too many N: 136
+reads failed due to too short: 64717
+reads with adapter trimmed: 0
+bases trimmed due to adapters: 0
+reads with polyX in 3' end: 109172
+bases trimmed in polyX tail: JSON report: fastp.json26808389Read1 after filtering:
+total reads: 
+HTML report: fastp.html3432813
+
+Duplication rate (may be overestimated since this is SE data): 96.3033%)
+
+29441801(65.9008%
+total bases: 
+
+fastp --in1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Data/RNA-seq//IDB_tissue_Jan20_rep2_SE50.fastq.gz --out1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Analysis/2024_12_02_RNAseq_filtering/trimmed//IDB_tissue_Jan20_rep2_SE50_trimmed.fastq --cut_tail --cut_front --trim_poly_x --cut_mean_quality 20 --length_required 30 --average_qual 30 --thread 16 
+1607367007
+Q20 bases: fastp v1587235474(0.24.0, time used: 38 seconds
+98.7475%)
+Q30 bases: 1557498289(96.8975%)
+
+Filtering result:
+reads passed filter: 26808389
+reads failed due to low quality: 689567
+reads failed due to too many N: 0
+reads failed due to too short: 90752
+reads with adapter trimmed: 92393
+bases trimmed due to adapters: 3700023
+reads with polyX in 3' end: 73079
+bases trimmed in polyX tail: 2123147
+
+Duplication rate (may be overestimated since this is SE data): 59.8582%
+total reads: reads failed due to low quality: 
+97.5107%)
+Q30 bases: 24919363921411
+total bases: 
+
+(16781826571704412033(total bases: 94.5531%)
+
+Read1 after filtering:
+
+
+reads with adapter trimmed: reads failed due to too many N: total reads: 
+141965055994.6181%)0Q20 bases: 29893227
+total bases: 1702941453
+Q20 bases: 1674848388(
+13
+
+98.3503%)
+Q30 bases: 1635347620Filtering result:1642182307JSON report: fastp.json
+HTML report: fastp.html
+
+fastp --in1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Data/RNA-seq//IDB_aggregates24h_Mar21_norep_SE50.fastq.gz --out1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Analysis/2024_12_02_RNAseq_filtering/trimmed//IDB_aggregates24h_Mar21_norep_SE50_trimmed.fastq --cut_tail --cut_front --trim_poly_x --cut_mean_quality 20 --length_required 30 --average_qual 30 --thread 16 
+Q20 bases: fastp v0.24.0, time used: 41 seconds
+Read1 before filtering:
+
+Read1 after filtering:
+
+
+(1399927566reads failed due to too short: 15868Read1 before filtering:
+bases trimmed due to adapters: 0(total reads: 3057922396.0308reads passed filter: 
+Read1 before filtering:(JSON report: 97.8548
+reads with adapter trimmed: 0
+bases trimmed due to adapters: 0
+28291472
+
+98.6107total bases: 1742004161
+
+%)fastp.jsontotal reads: 34091412%)
+
+Q20 bases: 1713838633(98.3832total reads: reads with polyX in 3' end: 64711
+%)
+25667112%)
+
+Q30 bases: 
+bases trimmed in polyX tail: 1908417Filtering result:
+
+
+Q30 bases: HTML report: reads passed filter: Q30 bases: 
+1599951351
+reads failed due to low quality: 849730
+29893227total bases: 13718191751674340285fastp.html1463025384(
+
+(
+Duplication rate (may be overestimated since this is SE data): 
+reads failed due to low quality: 95.3383
+total bases: 
+59.858%
+96.6308fastp --in1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Data/RNA-seq//IDB_cells_Aug19_rep3_SE50.fastq.gz --out1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Analysis/2024_12_02_RNAseq_filtering/trimmed//IDB_cells_Aug19_rep3_SE50_trimmed.fastq --cut_tail --cut_front --trim_poly_x --cut_mean_quality 20 --length_required 30 --average_qual 30 --thread 16 (%)total reads: 969023
+reads failed due to too many N: reads with polyX in 3' end: %)
+1943210484
+Q20 bases: 
+
+fastp v
+51946
+
+Q20 bases: 1894752544(reads failed due to too many N: 
+27234982JSON report: fastp.json
+HTML report: 13
+96.11570.24.025Read1 after filtering:, time used: Filtering result:97.5063%)
+Q30 bases: 
+bases trimmed in polyX tail: 1136580
+reads failed due to too short: 20274total reads: 14319066531838390942reads passed filter: 40fastp.html
+
+28655891%)24919363 seconds
+reads with adapter trimmed: 0
+
+
+
+
+
+fastp --in1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Data/RNA-seq//IDB_tissue_Nov18_rep1_SE50.fastq.gz --out1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Analysis/2024_12_02_RNAseq_filtering/trimmed//IDB_tissue_Nov18_rep1_SE50_trimmed.fastq --cut_tail --cut_front --trim_poly_x --cut_mean_quality 20 --length_required 30 --average_qual 30 --thread 16 
+total bases: 
+Duplication rate (may be overestimated since this is SE data): reads failed due to low quality: (
+Filtering result:1632523914total bases: 
+67455497.873
+(94.6059%)
+
+1634098920
+reads failed due to too short: 17721
+%)reads passed filter: 30579223
+55.196Q20 bases: 
+
+fastp v%reads failed due to too many N: Q20 bases: bases trimmed due to adapters: 0
+reads with polyX in 3' end: 
+1609617185
+21reads failed due to low quality: 1001616
+1599723968(reads failed due to too many N: 16(
+
+Q30 bases: 55452
+reads failed due to too short: 21956JSON report: bases trimmed in polyX tail: 
+97.89640.24.098.59691395428452
+reads with adapter trimmed: 0
+bases trimmed due to adapters: 0reads failed due to too short: (Read1 after filtering:
+total reads: 32972175fastp.json
+
+, time used: 
+
+%)%)reads with adapter trimmed: 0
+bases trimmed due to adapters: 0
+reads with polyX in 3' end: 55742
+bases trimmed in polyX tail: total bases: 1009195.3796
+reads with polyX in 3' end: %)1253811
+
+Duplication rate (may be overestimated since this is SE data): 
+
+56.1991%Q30 bases: 
+1878319533
+Q20 bases: reads with adapter trimmed: Q30 bases: 1577148394431371817
+
+18479825060
+64137
+bases trimmed in polyX tail: 1518547(Read1 after filtering:HTML report: fastp.html
+ seconds
+
+total reads: 
+
+Duplication rate (may be overestimated since this is SE data): 96.6081558552418
+
+Duplication rate (may be overestimated since this is SE data): bases trimmed due to adapters: 2499234560.5417%
+%)(59.3488%0
+
+
+total bases: fastp --in1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Data/RNA-seq//IDB_cells_Nov18_rep2_SE50.fastq.gz --out1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Analysis/2024_12_02_RNAseq_filtering/trimmed//IDB_cells_Nov18_rep2_SE50_trimmed.fastq --cut_tail --cut_front --trim_poly_x --cut_mean_quality 20 --length_required 30 --average_qual 30 --thread 16 
+1423850667(98.3849
+
+
+reads with polyX in 3' end: Q20 bases: 1403995401(Filtering result:JSON report: fastp.json
+HTML report: fastp.html
+%)
+fastp v0.24.0
+98.605541793
+Q30 bases: %)JSON report: fastp.json
+
+, time used: 95.3769
+1805340882
+44 secondsreads passed filter: Read1 before filtering:%)
+
+bases trimmed in polyX tail: 
+28655891
+fastp --in1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Data/RNA-seq//IDB_cells_Nov18_rep1_SE50.fastq.gz --out1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Analysis/2024_12_02_RNAseq_filtering/trimmed//IDB_cells_Nov18_rep1_SE50_trimmed.fastq --cut_tail --cut_front --trim_poly_x --cut_mean_quality 20 --length_required 30 --average_qual 30 --thread 16 
+fastp v
+Q30 bases: HTML report: fastp.html
+JSON report: fastp.json
+HTML report: fastp.html
+
+fastp --in1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Data/RNA-seq//IDB_cells_Nov18_rep3_SE50.fastq.gz --out1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Analysis/2024_12_02_RNAseq_filtering/trimmed//IDB_cells_Nov18_rep3_SE50_trimmed.fastq --cut_tail --cut_front --trim_poly_x --cut_mean_quality 20 --length_required 30 --average_qual 30 --thread 16 791630Read1 after filtering:(
+Read1 before filtering:
+
+
+
+13759084380.24.0reads failed due to low quality: 
+total reads: 
+
+(, time used: total reads: 775437total reads: fastp v0.24.0, time used: 45
+26465423Duplication rate (may be overestimated since this is SE data): 45 seconds
+96.6329 seconds
+
+28314669
+96.1147%)
+56.256327627341%)
+Filtering result:fastp --in1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Data/RNA-seq//IDB_tissue_Nov18_rep2_SE50.fastq.gz --out1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Analysis/2024_12_02_RNAseq_filtering/trimmed//IDB_tissue_Nov18_rep2_SE50_trimmed.fastq --cut_tail --cut_front --trim_poly_x --cut_mean_quality 20 --length_required 30 --average_qual 30 --thread 16 total bases: 
+
+fastp vreads failed due to too many N: 
+
+reads passed filter: 329721750.24.0, time used: 45 seconds%total bases: 
+20total bases: 
+
+reads failed due to low quality: 1086588
+1587033201
+reads failed due to too many N: 18
+reads failed due to too short: 32631
+reads with adapter trimmed: 0
+bases trimmed due to adapters: 0
+reads with polyX in 3' end: 77341
+bases trimmed in polyX tail: 2108166
+
+Duplication rate (may be overestimated since this is SE data): 65.4827%
+
+
+1613936133
+reads failed due to too short: Q20 bases: 104531580212032
+(reads with adapter trimmed: 0
+bases trimmed due to adapters: 0
+reads with polyX in 3' end: 45609
+bases trimmed in polyX tail: 97.9104833855%)
+
+
+Q30 bases: Duplication rate (may be overestimated since this is SE data): 154052373465.5752(%95.4513
+%)
+
+Read1 after filtering:
+total reads: 27576319
+total bases: 1571027848
+Q20 bases: 1549559232(98.6335%)
+Q30 bases: 1519000215(96.6883%)
+
+Filtering result:
+reads passed filter: 27576319
+reads failed due to low quality: 727064
+reads failed due to too many N: 17
+reads failed due to too short: 11269
+reads with adapter trimmed: 0
+bases trimmed due to adapters: 0
+reads with polyX in 3' end: 46597
+bases trimmed in polyX tail: 880634
+
+Duplication rate (may be overestimated since this is SE data): 57.6647%
+Filtering result:
+reads passed filter: 24992345
+reads failed due to low quality: 667329
+reads failed due to too many N: 13
+reads failed due to too short: 74251574758437
+reads with adapter trimmed: 0
+
+
+Q20 bases: bases trimmed due to adapters: Q20 bases: 1542288774(01565982144(97.9381%)98.6736
+reads with polyX in 3' end: 35228
+bases trimmed in polyX tail: 610979
+
+Duplication rate (may be overestimated since this is SE data): 
+Q30 bases: 1504062886(95.510769.678%
+%)
+Q30 bases: %)1534871416(96.7133%)
+
+Filtering result:
+reads passed filter: 26465423
+
+Read1 after filtering:
+
+reads failed due to low quality: 743194
+total reads: reads failed due to too many N: 4
+26920063
+total bases: 1533602162
+Q20 bases: reads failed due to too short: 263611512858292
+(98.6474%)
+reads with adapter trimmed: 0
+bases trimmed due to adapters: Q30 bases: 1483315102(96.721%)
+
+Filtering result:
+reads passed filter: 269200630
+
+reads with polyX in 3' end: 63483
+bases trimmed in polyX tail: reads failed due to low quality: 1763031
+689635
+Duplication rate (may be overestimated since this is SE data): 62.4667%
+reads failed due to too many N: 20
+reads failed due to too short: 17623
+
+reads with adapter trimmed: 0
+bases trimmed due to adapters: 0
+reads with polyX in 3' end: 54822
+bases trimmed in polyX tail: 1217853
+
+Duplication rate (may be overestimated since this is SE data): 57.6891%
+
+
+JSON report: JSON report: fastp.jsonfastp.json
+
+HTML report: HTML report: fastp.htmlfastp.html
+
+
+
+fastp --in1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Data/RNA-seq//IDB_aggregates24h_Jan20_rep2_SE50.fastq.gz --out1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Analysis/2024_12_02_RNAseq_filtering/trimmed//IDB_aggregates24h_Jan20_rep2_SE50_trimmed.fastq --cut_tail --cut_front --trim_poly_x --cut_mean_quality 20 --length_required 30 --average_qual 30 --thread 16 fastp --in1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Data/RNA-seq//IDB_cells_Jan20_rep2_SE50.fastq.gz --out1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Analysis/2024_12_02_RNAseq_filtering/trimmed//IDB_cells_Jan20_rep2_SE50_trimmed.fastq --cut_tail --cut_front --trim_poly_x --cut_mean_quality 20 --length_required 30 --average_qual 30 --thread 16 
+
+fastp vfastp v0.24.00.24.0, time used: , time used: 4949 seconds seconds
+
+Read1 before filtering:
+total reads: 28539005
+total bases: 1712340300
+Q20 bases: 1679460789(98.0798%)
+Q30 bases: 1639689287(95.7572%)
+
+Read1 after filtering:
+total reads: 27742262
+total bases: 1663370444
+Q20 bases: 1642806267(98.7637%)
+Q30 bases: 1612387186(96.9349%)
+
+Filtering result:
+reads passed filter: 27742262
+reads failed due to low quality: 673709
+reads failed due to too many N: 0
+reads failed due to too short: 123034
+reads with adapter trimmed: 125222
+bases trimmed due to adapters: 5552578
+reads with polyX in 3' end: 75978
+bases trimmed in polyX tail: 2246963
+
+Duplication rate (may be overestimated since this is SE data): 63.0557%
+
+JSON report: fastp.json
+HTML report: 
+fastp.html
+
+fastp --in1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Data/RNA-seq//IDB_aggregates24h_Jan20_rep1_SE50.fastq.gz --out1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Analysis/2024_12_02_RNAseq_filtering/trimmed//IDB_aggregates24h_Jan20_rep1_SE50_trimmed.fastq --cut_tail --cut_front --trim_poly_x --cut_mean_quality 20 --length_required 30 --average_qual 30 --thread 16 
+fastp v0.24.0, time used: 50 seconds
+JSON report: fastp.json
+HTML report: fastp.html
+
+fastp --in1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Data/RNA-seq//IDB_tissue_Aug19_rep2_SE50.fastq.gz --out1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Analysis/2024_12_02_RNAseq_filtering/trimmed//IDB_tissue_Aug19_rep2_SE50_trimmed.fastq --cut_tail --cut_front --trim_poly_x --cut_mean_quality 20 --length_required 30 --average_qual 30 --thread 16 
+fastp v0.24.0, time used: 50 seconds
+
+JSON report: fastp.json
+HTML report: fastp.html
+
+fastp --in1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Data/RNA-seq//IDB_aggregates24h_rep1_SE50.fastq.gz --out1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Analysis/2024_12_02_RNAseq_filtering/trimmed//IDB_aggregates24h_rep1_SE50_trimmed.fastq --cut_tail --cut_front --trim_poly_x --cut_mean_quality 20 --length_required 30 --average_qual 30 --thread 16 
+fastp v0.24.0, time used: 50 seconds
+
+JSON report: fastp.json
+HTML report: fastp.html
+
+fastp --in1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Data/RNA-seq//IDB_tissue_Jan20_rep1_SE50.fastq.gz --out1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Analysis/2024_12_02_RNAseq_filtering/trimmed//IDB_tissue_Jan20_rep1_SE50_trimmed.fastq --cut_tail --cut_front --trim_poly_x --cut_mean_quality 20 --length_required 30 --average_qual 30 --thread 16 
+fastp v0.24.0, time used: 50 seconds
+
+
+JSON report: fastp.json
+JSON report: fastp.json
+HTML report: fastp.html
+
+fastp --in1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Data/RNA-seq//IDB_cells_Jan20_rep3_SE50.fastq.gz --out1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Analysis/2024_12_02_RNAseq_filtering/trimmed//IDB_cells_Jan20_rep3_SE50_trimmed.fastq --cut_tail --cut_front --trim_poly_x --cut_mean_quality 20 --length_required 30 --average_qual 30 --thread 16 
+fastp v0.24.0, time used: 51 secondsHTML report: fastp.html
+
+
+fastp --in1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Data/RNA-seq//IDB_aggregates24_Nov18_rep1_SE50.fastq.gz --out1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Analysis/2024_12_02_RNAseq_filtering/trimmed//IDB_aggregates24_Nov18_rep1_SE50_trimmed.fastq --cut_tail --cut_front --trim_poly_x --cut_mean_quality 20 --length_required 30 --average_qual 30 --thread 16 
+fastp v0.24.0, time used: 50 seconds
+Read1 before filtering:
+total reads: 28044149
+total bases: 1682648940
+Q20 bases: 1642077300(97.5888%)
+Q30 bases: 1585583333(94.2314%)
+
+Read1 after filtering:
+total reads: 27412299
+total bases: 1641086146
+Q20 bases: 1611671888(98.2076%)
+Q30 bases: 1564018649(95.3039%)
+
+Filtering result:
+reads passed filter: 27412299
+reads failed due to low quality: 549778
+reads failed due to too many N: 71
+reads failed due to too short: 82001
+reads with adapter trimmed: 90308
+bases trimmed due to adapters: 3504846
+reads with polyX in 3' end: 69776
+bases trimmed in polyX tail: 1910894
+
+Duplication rate (may be overestimated since this is SE data): 53.1931%
+
+JSON report: fastp.json
+HTML report: fastp.html
+
+fastp --in1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Data/RNA-seq//IDB_cells_Aug19_rep2_SE50.fastq.gz --out1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Analysis/2024_12_02_RNAseq_filtering/trimmed//IDB_cells_Aug19_rep2_SE50_trimmed.fastq --cut_tail --cut_front --trim_poly_x --cut_mean_quality 20 --length_required 30 --average_qual 30 --thread 16 
+fastp v0.24.0, time used: 51 seconds
+Read1 before filtering:
+total reads: 33115086
+total bases: 1986905160
+Q20 bases: 1946391661(97.961%)
+Q30 bases: 1897782439(95.5145%)
+
+Read1 after filtering:
+total reads: 32086710
+total bases: 1923803950
+Q20 bases: 1899231052(98.7227%)
+Q30 bases: 1862823468(96.8302%)
+
+Filtering result:
+reads passed filter: 32086710
+reads failed due to low quality: 880641
+reads failed due to too many N: 4
+reads failed due to too short: 147731
+reads with adapter trimmed: 151044
+bases trimmed due to adapters: 6790819
+reads with polyX in 3' end: 87557
+bases trimmed in polyX tail: 2561827
+
+Duplication rate (may be overestimated since this is SE data): 62.7179%
+
+JSON report: fastp.json
+HTML report: fastp.html
+
+fastp --in1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Data/RNA-seq//IDB_cells_Aug19_rep1_SE50.fastq.gz --out1 /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Analysis/2024_12_02_RNAseq_filtering/trimmed//IDB_cells_Aug19_rep1_SE50_trimmed.fastq --cut_tail --cut_front --trim_poly_x --cut_mean_quality 20 --length_required 30 --average_qual 30 --thread 16 
+fastp v0.24.0, time used: 60 seconds
