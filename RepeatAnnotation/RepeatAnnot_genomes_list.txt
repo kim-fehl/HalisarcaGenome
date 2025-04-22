@@ -1,0 +1,7 @@
+#RefSeqID	Name	Assembly_name
+GCF_964019385.1	Sycon_ciliatum	ocSycCili1.1
+GCF_963678975.1	Dysidea_avara	odDysAvar1.4
+GCF_963675165.1	Halichondria_panicea	odHalPani1.1
+GCF_963422355.1	Corticum_candelabrum	ooCorCand1.1
+GCF_947507565.1	Oscarella_lobularis	ooOscLobu1.1
+GCF_000090795.2	Amphimedon_queenslandica	v1.1
