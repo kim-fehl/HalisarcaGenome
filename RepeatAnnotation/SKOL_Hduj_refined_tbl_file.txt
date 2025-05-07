@@ -1,0 +1,38 @@
+Retroelements       167454     34312138 bp   15.41 %
+   SINEs:             2893       467959 bp    0.21 %
+   Penelope:             0            0 bp    0.00 %
+   LINEs:           107630     24121689 bp   10.83 %
+    CRE/SLACS        29274      9503335 bp    4.27 %
+     L2/CR1/Rex       4359      1484416 bp    0.67 %
+     R1/LOA/Jockey       0            0 bp    0.00 %
+     R2/R4/NeSL       3886      1346334 bp    0.60 %
+     RTE/Bov-B       28505      6913811 bp    3.10 %
+     L1/CIN4         40979      4649547 bp    2.09 %
+   LTR elements:     56931      9722490 bp    4.37 %
+     BEL/Pao         15194      1904433 bp    0.86 %
+     Ty1/Copia         164        91867 bp    0.04 %
+     Gypsy/DIRS1      2898      1699490 bp    0.76 %
+       Retroviral    33894      4481235 bp    2.01 %
+
+DNA transposons      71038     17524020 bp    7.87 %
+   hobo-Activator     7566      1931249 bp    0.87 %
+   Tc1-IS630-Pogo    21305      4129784 bp    1.85 %
+   En-Spm                0            0 bp    0.00 %
+   MULE-MuDR          1618       390057 bp    0.18 %
+   PiggyBac            249       151704 bp    0.07 %
+   Tourist/Harbinger  8464      2520214 bp    1.13 %
+   Other (Mirage,      102        69640 bp    0.03 %
+    P-element, Transib)
+
+Rolling-circles       4667      1979349 bp    0.89 %
+
+Unclassified:       127385     36445244 bp   16.36 %
+
+Total interspersed repeats:    88281402 bp   39.64 %
+
+
+Small RNA:           20367      4624874 bp    2.08 %
+
+Satellites:           1825       320003 bp    0.14 %
+Simple repeats:     141291      6346936 bp    2.85 %
+Low complexity:       6958       367198 bp    0.16 %
