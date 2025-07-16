@@ -1,16 +1,20 @@
-#!/bin/bash
-#SBATCH --partition=htc
-#SBATCH --job-name=PASA_annot_update
-#SBATCH --mem=5G
-#SBATCH --cpus-per-task=20
-#SBATCH --time=1:00:00 
-#SBATCH --output=/gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Analysis/2025_03_28_PASA_annot_update/gffcheck.log
-#SBATCH --error=/gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Analysis/2025_03_28_PASA_annot_update/gffcheck.err
-#SBATCH --mail-type=ALL
-#SBATCH --mail-user=Vasiliy.Zubarev@skoltech.ru
+#!/usr/bin/env bash
+set -euo pipefail
 
-source activate /beegfs/home/vasiliy.zubarev/software/PASA/
-export DBI_DRIVER=SQLite
-PASAHOME=/beegfs/home/vasiliy.zubarev/software/PASA/opt/pasa-2.5.3
+##### CONSTANTS #####
+# Working directories
+GENOME_DIR=/home/lab/kim/hd/genome
 
-$PASAHOME/misc_utilities/pasa_gff3_validator.pl /gpfs/data/gpfs0/vasiliy.zubarev/Sponge/Results/Genome/braker_compleasm_AGAT_cleaned.gff3 > gffcheck.out
+# Fix BRAKER's GFF to pass through PASA GFF validator:
+# Change hierarchy from "exon/CDS -> transcript -> mRNA -> gene"
+#                    to "exon/CDS -> mRNA -> gene"
+awk -F'\t' 'BEGIN{OFS=FS}
+  $3=="mRNA" && $2=="GeneMark.hmm3" { next }
+  $3=="transcript" { $3="mRNA" }
+  { print }
+' ${GENOME_DIR}/braker_AGAT_mitoCleaned.gff3 \
+> ${GENOME_DIR}/braker_AGAT_mitoCleaned_PASA.gff3
+
+$PASAHOME/misc_utilities/pasa_gff3_validator.pl \
+${GENOME_DIR}/braker_AGAT_mitoCleaned_PASA.gff3 \
+> ${GENOME_DIR}/pasa_gff3_validator.log
