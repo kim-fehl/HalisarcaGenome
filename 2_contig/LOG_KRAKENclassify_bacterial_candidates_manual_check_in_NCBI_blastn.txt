@@ -1,0 +1,14 @@
+#KRAKEN_bacterial_candidate	Source(NCBI_blastn)
+ctg000120_pilon_2	sponge
+ctg000720_pilon_1	sponge
+ctg000850_pilon_2	sponge
+ctg000920_pilon_1	unknown
+ctg001520_pilon_1	unknown
+ctg002300_pilon_1	unknown
+ctg003270_pilon_1	sponge
+ctg003330_pilon_1	sponge
+ctg003380_pilon_1	sponge
+ctg003480_pilon_1	sponge
+ctg003490_pilon_1	sponge
+ctg003540_pilon_1	bacterium
+ctg003630_pilon_1	sponge
