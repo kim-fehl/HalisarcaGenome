@@ -1,0 +1,102 @@
+#Transcriptomic resourses for Halisarca dujardinii annotation and comparative studies
+#SRA_ID	Author_organization	Dataset	Condition	Replicate	Layout
+SRS5777949	IDB	basic	frozentissue-Jul17	norep	PE250
+SRS5777948	IDB	basic	cells-Jul17	norep	PE250
+SRS5777947	IDB	basic	tissue-Jul17	norep	PE250
+SRS5777946	IDB	basic	aggregates24-Nov17	norep	PE250
+SRS5777941	IDB	basic	tissue-Nov17	norep	PE250
+SRS5777940	IDB	basic	cells-Nov17	norep	PE250
+ERX1222364	AUSTR	larva	adult	norep	PE200
+ERX1222363	AUSTR	larva	larva	norep	PE200
+SRS9550146	IDB	aggr	aggregates24h-Jan20	rep3	SE50
+SRS9550145	IDB	aggr	cells-Jan20	rep3	SE50
+SRS9550144	IDB	aggr	tissue-Jan20	rep3	SE50
+SRS9550143	IDB	aggr	aggregates24h-Jan20	rep2	SE50
+SRS9550142	IDB	aggr	cells-Jan20	rep2	SE50
+SRS9550141	IDB	aggr	tissue-Jan20	rep2	SE50
+SRS9550140	IDB	aggr	aggregates24h-Jan20	rep1	SE50
+SRS9550154	IDB	aggr	cells-Jan20	rep1	SE50
+SRS9550153	IDB	aggr	tissue-Jan20	rep1	SE50
+SRS9550152	IDB	aggr	aggregates24h-Aug19	rep3	SE50
+SRS9550151	IDB	aggr	cells-Aug19	rep3	SE50
+SRS9550150	IDB	aggr	aggregates24h-Aug19	rep2	SE50
+SRS9550149	IDB	aggr	cells-Aug19	rep2	SE50
+SRS9550148	IDB	aggr	tissue-Aug19	rep2	SE50
+SRS9550147	IDB	aggr	aggregates24h-Aug19	rep1	SE50
+SRS9550139	IDB	aggr	cells-Aug19	rep1	SE50
+SRS9550138	IDB	aggr	tissue-Aug19	rep1	SE50
+SRS5777951	IDB	aggr	aggregates24-Nov18	rep2	SE50
+SRS5777950	IDB	aggr	aggregates24-Nov18	rep1	SE50
+SRS5777942	IDB	aggr	cells-Nov18	rep3	SE50
+SRS5777953	IDB	aggr	cells-Nov18	rep2	SE50
+SRS5777952	IDB	aggr	cells-Nov18	rep1	SE50
+SRS5777945	IDB	aggr	tissue-Nov18	rep2	SE50
+#SRS5777943	IDB	aggr	tissue-Nov18	rep1	SE50
+#SRR30620882	IDB	aggr	aggregates24h-Mar21	rep1	SE50
+#SRR30620881	IDB	aggr	aggregates24h-Mar21	rep2	SE50
+#SRR30620880	IDB	aggr	aggregates24h-Mar21	rep3	SE50
+#SRR30620879	IDB	aggr	cells-Mar21	rep1	SE50
+#SRR30620877	IDB	aggr	cells-Mar21	rep2	SE50
+#SRR30620876	IDB	aggr	cells-Mar21	rep3	SE50
+#SRR30620875	IDB	aggr	tissue-Mar21	rep1	SE50
+#SRR30620878	IDB	aggr	tissue-Mar21	rep2	SE50
+#SRR30620874	IDB	aggr	tissue-Mar21	rep3	SE50
+#SRR32050816	SPB	aggr	tissue	rep1	PE150
+#SRR32050825	SPB	aggr	tissue	rep2	PE150
+#SRR32050826	SPB	aggr	tissue	rep3	PE150
+#SRR32050824	SPB	aggr	primaggr	rep1	PE150
+#SRR32050823	SPB	aggr	primaggr	rep2	PE150
+#SRR32050809	SPB	aggr	primaggr	rep3	PE150
+#SRR32050810	SPB	aggr	primmorph1	rep1	PE150
+#SRR32050811	SPB	aggr	primmorph1	rep2	PE150
+#SRR32050812	SPB	aggr	primmorph1	rep3	PE150
+#SRR32050813	SPB	aggr	primmorph2	rep1	PE150
+#SRR32050814	SPB	aggr	primmorph2	rep2	PE150
+SRR32050815	SPB	aggr	primmorph2	rep3	PE150
+SRR32050821	SPB	aggr	primmorph3	rep1	PE150
+SRR32050820	SPB	aggr	primmorph3	rep2	PE150
+SRR32050822	SPB	aggr	primmorph3	rep3	PE150
+SRR32050817	SPB	aggr	recovered	rep1	PE150
+#SRR32050818	SPB	aggr	recovered	rep2	PE150
+#SRR32050819	SPB	aggr	recovered	rep3	PE150
+#SRR27694423	SPB	larva	earlycleavage	norep	PE150
+#SRR27694424	SPB	larva	midcleavage	norep	PE150
+#SRR27694419	SPB	larva	foldprelarva	norep	PE150
+#SRR27694416	SPB	larva	smoothprelarva	rep1	PE150
+#SRR27694417	SPB	larva	smoothprelarva	rep2	PE150
+#SRR27694418	SPB	larva	smoothprelarva	rep3	PE150
+#SRR27694420	SPB	larva	disphaerula	rep1	PE150
+#SRR27694421	SPB	larva	disphaerula	rep2	PE150
+#SRR27694422	SPB	larva	disphaerula	rep3	PE150
+#SRR27694415	SPB	larva	freeswimming	norep	PE150
+SRR27709526	SPB	regen	1h	rep1	PE150
+SRR27709525	SPB	regen	1h	rep2	PE150
+SRR27709524	SPB	regen	1h	rep3	PE150
+SRR27709523	SPB	regen	1h	rep4	PE150
+SRR27709532	SPB	regen	30min	rep1	PE150
+SRR27709529	SPB	regen	30min	rep2	PE150
+SRR27709528	SPB	regen	30min	rep3	PE150
+SRR27709527	SPB	regen	30min	rep4	PE150
+SRR27709544	SPB	regen	intact	rep1	PE150
+SRR27709543	SPB	regen	intact	rep2	PE150
+SRR27709542	SPB	regen	3h	rep1	PE150
+SRR27709541	SPB	regen	3h	rep2	PE150
+SRR27709540	SPB	regen	3h	rep3	PE150
+SRR27709539	SPB	regen	6h	rep1	PE150
+SRR27709538	SPB	regen	6h	rep2	PE150
+SRR27709537	SPB	regen	6h	rep3	PE150
+SRR27709536	SPB	regen	12h	rep1	PE150
+SRR27709535	SPB	regen	12h	rep2	PE150
+SRR27709534	SPB	regen	12h	rep3	PE150
+SRR27709533	SPB	regen	24h	rep1	PE150
+SRR27709531	SPB	regen	24h	rep2	PE150
+SRR27709530	SPB	regen	24h	rep3	PE150
+
+#IDB=Koltzov Institute of Developmental Biology RAS, Moscow
+#AUSTR=Australian National University
+#SPB=Saint Petersburg State University
+#primaggr = Primary Multicellular Aggregate
+#primmorph1 = Early-Staged Primmorph
+#primmorph2 = True Primmorph
+#primmorph3 = Primmorph with Developing Aquiferous System, Early Stage
+#recovered = Fully Recovered Sponge
