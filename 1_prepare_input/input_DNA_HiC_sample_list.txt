@@ -1,0 +1,16 @@
+#Genomic resources for Halisarca dujardinii genome assembly and scaffolding
+#SRA_ID	Author_organization	Type/technology	Condition	Replicate	Layout
+SRR31896581	SKOL	GenomicONP	AdultBody	no	SE
+SRR27326128	SPB	GenomicONP	larva	rep1	SE
+SRR27326129	SPB	GenomicONP	larva	rep2	SE
+SRR27326130	SPB	GenomicONP	larva	rep3	SE
+SRR31896582	SKOL	GenomicIllumina	AdultBody	no	PE250
+SRR33834216	SKOL	GenomicIllumina	AdultBody	no	PE150
+SRR33832915	SKOL	HiCIllumina	AdultBody	run1rep1lane1	PE150
+SRR33832914	SKOL	HiCIllumina	AdultBody	run1rep1lane2	PE150
+SRR33832913	SKOL	HiCIllumina	AdultBody	run1rep2lane1	PE150
+SRR33832912	SKOL	HiCIllumina	AdultBody	run1rep2lane2	PE150
+SRR33832911	SKOL	HiCIllumina	AdultBody	run2rep1lane1	PE150
+SRR33832910	SKOL	HiCIllumina	AdultBody	run2rep1lane2	PE150
+SRR33832909	SKOL	HiCIllumina	AdultBody	run2rep2lane1	PE150
+SRR33832908	SKOL	HiCIllumina	AdultBody	run2rep2lane2	PE150
