@@ -1,0 +1,427 @@
+---
+title: "Genome feature statistics (Halisarca dujardinii)"
+author: "Kim Adameyko"
+date: "2025-12-25"
+output: html_document
+---
+
+```{r setup, message=FALSE, warning=FALSE}
+knitr::opts_chunk$set(fig.path = "figures/", echo = TRUE)
+
+libs <- c(
+  "AnnotationDbi",
+  "GenomicFeatures",
+  "GenomicRanges",
+  "ggridges",
+  "ggthemes",
+  "ggsci",
+  "ggplot2",
+  "ggpubfigs",
+  "grid",
+  "patchwork",
+  "scales",
+  "tibble",
+  "tidyverse",
+  "Rsamtools",
+  "rtracklayer"
+)
+
+invisible(sapply(libs, function(pkg) {
+  suppressPackageStartupMessages(
+    library(pkg, character.only = TRUE)
+  )
+}))
+```
+
+## Styling helpers
+
+```{r theme-helpers}
+theme_publication_base <- function(base_size = 14, base_family = "sans") {
+  theme_foundation(base_size = base_size, base_family = base_family) +
+    theme(
+      plot.title        = element_text(face = "bold", size = rel(1.2), hjust = 0.5),
+      text              = element_text(),
+      panel.background  = element_rect(colour = NA),
+      plot.background   = element_rect(colour = NA),
+      panel.border      = element_rect(colour = NA),
+      axis.title        = element_text(face = "bold", size = rel(1)),
+      axis.title.y      = element_text(angle = 90, vjust = 2),
+      axis.title.x      = element_text(vjust = -0.2),
+      axis.text         = element_text(),
+      axis.line         = element_line(colour = "black"),
+      axis.ticks        = element_line(),
+      panel.grid.major  = element_line(colour = "#f0f0f0"),
+      panel.grid.minor  = element_blank(),
+      legend.key        = element_rect(colour = NA),
+      plot.margin       = unit(c(10, 5, 5, 5), "mm"),
+      strip.background  = element_rect(colour = "#f0f0f0", fill = "#f0f0f0"),
+      strip.text        = element_text(face = "bold"),
+      legend.title      = element_blank()
+    )
+}
+
+theme_publication_bar <- function() {
+  theme_publication_base() +
+    theme(
+      legend.direction      = "vertical",
+      legend.key.width      = unit(0.6, "cm"),
+      legend.key.height     = unit(0.6, "cm"),
+      legend.spacing.y      = unit(0.8, "cm"),
+      legend.text           = element_text(size = 14, lineheight = 1.4),
+      panel.grid            = element_blank(),
+      panel.grid.major.x    = element_blank(),
+      panel.grid.major.y    = element_blank()
+    )
+}
+
+theme_publication_log10 <- function() {
+  theme_publication_base() +
+    theme(
+      axis.title.y          = element_blank(),
+      axis.text.y           = element_blank(),
+      axis.ticks.y          = element_blank(),
+      axis.line.y           = element_blank(),
+      panel.grid            = element_blank(),
+      panel.grid.major.y    = element_blank(),
+      panel.grid.minor.y    = element_blank(),
+      axis.text.x           = element_text(margin = margin(t = 8, unit = "pt"), vjust = 1, size = 12),
+      legend.direction      = "vertical",
+      legend.key.width      = unit(0.8, "cm"),
+      legend.key.height     = unit(0.8, "cm"),
+      legend.spacing.y      = unit(0.2, "cm"),
+      legend.text           = element_text(size = 14, lineheight = 1.0),
+      legend.position       = c(0, 1),
+      legend.justification  = c(0, 1)
+    )
+}
+
+log10_bp_layers <- function() {
+  list(
+    scale_x_log10(
+      breaks = c(1, 10, 50, 100, 500, 1000, 5000, 10000, 50000, 100000),
+      limits = c(1, 100000),
+      labels = c("1", "10", "50", "100", "500", "1K", "5K", "10K", "50K", "100K")
+    ),
+    scale_y_continuous(expand = c(0.05, 0)),
+    annotation_logticks(sides = "b", outside = TRUE),
+    coord_cartesian(clip = "off"),
+    guides(
+      color    = guide_legend(override.aes = list(fill = NA, size = 1), keywidth = unit(1, "cm")),
+      linetype = guide_legend(keywidth = unit(1, "cm"))
+    )
+  )
+}
+```
+
+## Inputs and preprocessing
+
+```{r inputs}
+# Update these paths if running elsewhere
+workdir     <- "~/idb/Data/Demospongiae/Halisarca_dujardini/genome/SkHd3/"
+gff_file    <- file.path(workdir, "SkHd3_nuclear_protein_coding_genes.gff3")
+fasta       <- file.path(workdir, "SkHd3_genome_nuclear_mito.fasta")
+txdb_sqlite <- file.path(workdir, "SkHd3_txdb.sqlite")
+
+setwd(workdir)
+
+# AGAT preprocessing: add start/stop codons, keep longest isoform per gene
+gff_agat <- sub("gff3$", "agat.longest.gff3", gff_file)
+if (!file.exists(gff_agat)) {
+  gff_start <- sub("gff3$", "agat.startcodon.gff3", gff_file)
+
+  cmd1 <- sprintf("agat_sp_add_start_and_stop.pl --gff %s --fasta %s -o %s",
+                  shQuote(gff_file), shQuote(fasta), shQuote(gff_start))
+  cmd2 <- sprintf("agat_sp_keep_longest_isoform.pl --gff %s -o %s",
+                  shQuote(gff_start), shQuote(gff_agat))
+
+  message("Running: ", cmd1)
+  system(cmd1)
+  message("Running: ", cmd2)
+  system(cmd2)
+}
+
+gff_file <- gff_agat  # use processed GFF3 downstream
+```
+
+```{r load-txdb}
+# GFF import
+gff <- rtracklayer::import(gff_file, format = "gff3")
+
+# TxDb cache
+if (file.exists(txdb_sqlite)) {
+  message("Loading cached TxDb: ", txdb_sqlite)
+  txdb <- loadDb(txdb_sqlite, packageName = "GenomicFeatures")
+} else {
+  message("Building TxDb from GFF3 and caching SQLite...")
+  txdb <- makeTxDbFromGFF(gff_file, format = "gff3")
+  saveDb(txdb, txdb_sqlite)
+}
+
+# FASTA index + seqinfo
+fai <- paste0(fasta, ".fai")
+if (!file.exists(fai)) {
+  message("Indexing FASTA (creating .fai): ", fai)
+  indexFa(fasta)
+}
+si_fa <- seqinfo(Rsamtools::FaFile(fasta))
+```
+
+## Feature extraction helpers
+
+```{r helpers}
+exon_count_levels  <- c("No UTR annotated",
+                        "Monoexonic, >=1 UTR annotated",
+                        "Multiexonic, >=1 UTR annotated")
+exon_type_levels   <- c("Monoexonic gene, no UTR",
+                        "Monoexonic gene, >=1 UTR",
+                        "Multiexonic, CDS exon",
+                        "Multiexonic, 5'UTR exon",
+                        "Multiexonic, 3'UTR exon")
+intron_type_levels <- c("CDS intron",
+                        "5'UTR intron",
+                        "3'UTR intron")
+region_type_levels <- c("Monoexonic CDS",
+                        "Multiexonic CDS",
+                        "Multiexonic (unspliced)",
+                        "5'UTR",
+                        "3'UTR",
+                        "Intergenic region")
+
+extract_tx_features <- function(txdb, exon_threshold = 30) {
+  # Precompute ranges once
+  exon_list   <- exonsBy(txdb, by = "tx", use.names = TRUE)
+  cds_list    <- cdsBy(txdb,  by = "tx", use.names = TRUE)
+  utr5_list   <- fiveUTRsByTranscript(txdb, use.names = TRUE)
+  utr3_list   <- threeUTRsByTranscript(txdb, use.names = TRUE)
+  intron_list <- intronsByTranscript(txdb, use.names = TRUE)
+
+  cds_ranges   <- unlist(range(cds_list),   use.names = TRUE)
+  utr5_ranges  <- unlist(range(utr5_list),  use.names = TRUE)
+  utr3_ranges  <- unlist(range(utr3_list),  use.names = TRUE)
+  all_introns  <- unlist(intron_list,       use.names = FALSE)
+
+  # Exon-count distribution
+  df_exon_count <- tibble(
+    tx_name    = names(exon_list),
+    exon_count = elementNROWS(exon_list),
+    has_utr    = tx_name %in% names(utr5_list) | tx_name %in% names(utr3_list)
+  ) %>%
+    mutate(
+      bin      = if_else(exon_count >= exon_threshold, exon_threshold, exon_count),
+      category = case_when(
+        !has_utr                   ~ exon_count_levels[1],
+        exon_count == 1 & has_utr  ~ exon_count_levels[2],
+        exon_count >  1 & has_utr  ~ exon_count_levels[3]
+      ),
+      category = factor(category, levels = exon_count_levels)
+    ) %>%
+    count(bin, category, name = "count") %>%
+    ungroup() %>%
+    mutate(prop = count / sum(count))
+
+  # Exon-length distributions
+  mono_exons  <- unlist(exon_list[elementNROWS(exon_list) == 1], use.names = FALSE)
+  multi_exons <- unlist(exon_list[elementNROWS(exon_list) >  1], use.names = FALSE)
+
+  df_exons <- bind_rows(
+    tibble(
+      length = width(mono_exons),
+      type   = if_else(
+        countOverlaps(mono_exons, c(utr5_ranges, utr3_ranges)) > 0,
+        exon_type_levels[2],
+        exon_type_levels[1]
+      )
+    ),
+    tibble(
+      length = width(multi_exons),
+      type   = case_when(
+        countOverlaps(multi_exons, utr5_ranges) > 0 ~ exon_type_levels[4],
+        countOverlaps(multi_exons, utr3_ranges) > 0 ~ exon_type_levels[5],
+        TRUE                                        ~ exon_type_levels[3]
+      )
+    )
+  ) %>%
+    mutate(type = factor(type, levels = exon_type_levels))
+
+  # Intron-length distributions
+  df_introns <- tibble(
+    length = width(all_introns),
+    type   = case_when(
+      countOverlaps(all_introns, utr5_ranges) > 0 ~ intron_type_levels[2],
+      countOverlaps(all_introns, utr3_ranges) > 0 ~ intron_type_levels[3],
+      TRUE                                        ~ intron_type_levels[1]
+    )
+  ) %>%
+    mutate(type = factor(type, levels = intron_type_levels))
+
+  # CDS/UTR/intergenic length distributions
+  exon_lengths   <- sum(width(GenomicRanges::reduce(exon_list)))
+  tx_counts      <- elementNROWS(exon_list)
+  mono_txs       <- names(tx_counts)[tx_counts == 1]
+  multi_txs      <- names(tx_counts)[tx_counts >  1]
+
+  tx_gr               <- transcripts(txdb, columns = "tx_name")
+  multi_unspliced_gr  <- tx_gr[tx_gr$tx_name %in% multi_txs]
+  unspliced_lengths   <- setNames(width(multi_unspliced_gr), multi_unspliced_gr$tx_name)
+
+  by_chr <- split(tx_gr, seqnames(tx_gr))
+  df_inter <- lapply(by_chr, function(gr) {
+    gr2 <- sort(gr)
+    d   <- start(gr2)[-1] - end(gr2)[-length(gr2)] - 1
+    tibble(length = pmax(d, 0))
+  }) %>% bind_rows() %>%
+    mutate(type = region_type_levels[6])
+
+  df_regions <- bind_rows(
+    tibble(length = exon_lengths[mono_txs],  type = region_type_levels[1]),
+    tibble(length = exon_lengths[multi_txs], type = region_type_levels[2]),
+    tibble(length = unspliced_lengths,       type = region_type_levels[3]),
+    tibble(length = width(utr5_ranges),      type = region_type_levels[4]),
+    tibble(length = width(utr3_ranges),      type = region_type_levels[5]),
+    df_inter
+  ) %>%
+    mutate(type = factor(type, levels = region_type_levels))
+
+  # Gene density per 100 kb
+  start_gr <- gff[gff$type == "start_codon"]
+  bin_width <- 100000
+  bins <- tileGenome(si_fa, tilewidth = bin_width, cut.last.tile.in.chrom = TRUE)
+  bins <- bins[width(bins) == bin_width]
+
+  df_bins <- as_tibble(bins)[, c("seqnames", "start", "end")] %>%
+    mutate(genes = countOverlaps(bins, start_gr))
+
+  df_gene_density <- df_bins %>%
+    mutate(genes_per_bin_cat = if_else(genes >= 20, "20+", as.character(genes))) %>%
+    count(genes_per_bin_cat, name = "n_bins") %>%
+    arrange(factor(genes_per_bin_cat, levels = c(as.character(0:19), "20+"))) %>%
+    mutate(
+      genes_per_bin_cat = factor(genes_per_bin_cat, levels = c(as.character(0:19), "20+")),
+      prop              = n_bins / sum(n_bins)
+    )
+
+  list(
+    df_exon_count   = df_exon_count,
+    df_exons        = df_exons,
+    df_introns      = df_introns,
+    df_regions      = df_regions,
+    df_gene_density = df_gene_density
+  )
+}
+```
+
+## Extract features
+
+```{r extract}
+features <- extract_tx_features(txdb)
+```
+
+## Gene density
+
+```{r gene-density}
+df <- features$df_gene_density %>%
+  mutate(genes = as.numeric(sub("\\+", "", as.character(genes_per_bin_cat))))
+
+avg_density  <- sum(df$genes * df$prop)
+avg_density2 <- weighted.mean(df$genes, df$prop)
+
+p_gene_density <- ggplot(features$df_gene_density, aes(x = genes_per_bin_cat, y = prop)) +
+  geom_col(width = 0.92, fill = "gray30") +
+  scale_x_discrete(expand = c(0.05, 0), labels = c(as.character(0:19), "20+")) +
+  scale_y_continuous(breaks = c(0, 0.05, 0.10), labels = percent_format(accuracy = 1), expand = c(0.05, 0), minor_breaks = NULL) +
+  labs(x = "Gene density per 100 kb window", y = NULL) +
+  theme_publication_bar()
+
+p_gene_density
+```
+
+## Exon counts
+
+```{r exon-counts}
+fill_cols <- c(
+  "Monoexonic, >=1 UTR annotated"  = "#D55E00",
+  "Multiexonic, >=1 UTR annotated" = "#0077BB",
+  "No UTR annotated"               = "grey70"
+)
+
+p_exons_count <- ggplot(features$df_exon_count, aes(bin, prop, fill = category)) +
+  geom_col(width = 0.9) +
+  scale_fill_manual(breaks = names(fill_cols), values = fill_cols, name = NULL) +
+  scale_x_continuous(breaks = c(1, 5, 10, 15, 20, 25, 30), limits = c(0, 31), labels = c("1", "5", "10", "15", "20", "25", "30+"), expand = c(0, 0), minor_breaks = NULL) +
+  scale_y_continuous(labels = percent_format(accuracy = 1), expand = c(0.05, 0), minor_breaks = NULL) +
+  labs(x = "Number of Exons", y = NULL) +
+  theme_publication_bar() +
+  theme(legend.position = c(1, 1), legend.justification = c(1, 1))
+
+p_exons_count
+```
+
+## CDS, UTR, intergenic lengths
+
+```{r cds-utr}
+p_cds_utr <- ggplot(features$df_regions, aes(x = length, color = type, linetype = type)) +
+  geom_density(size = 1, key_glyph = "path") +
+  labs(x = "Length, bp", y = NULL, color = NULL, linetype = NULL) +
+  theme_publication_log10() + log10_bp_layers() +
+  scale_color_manual(values = c("#D55E00", "#0077BB", "#0077BB", "#009E73", "#CC79A7", "gray60")) +
+  scale_linetype_manual(values = c("solid", "solid", "27", "55", "79", "33"))
+
+p_cds_utr
+```
+
+## Exon lengths
+
+```{r exon-lengths}
+p_exons_length <- ggplot(features$df_exons, aes(length, color = type, linetype = type)) +
+  geom_density(linewidth = 1, key_glyph = "path") +
+  labs(x = "Exon length, bp", y = NULL) +
+  theme_publication_log10() + log10_bp_layers() +
+  scale_color_manual(values = c("#D55E00", "#E69F00", "#0077BB", "#009E73", "#CC79A7")) +
+  scale_linetype_manual(values = c("solid", "3A", "solid", "55", "79"))
+
+p_exons_length
+```
+
+## Intron lengths
+
+```{r intron-lengths}
+p_introns_length <- ggplot(features$df_introns, aes(length, color = type, linetype = type)) +
+  geom_density(size = 1, key_glyph = "path") +
+  log10_bp_layers() +
+  labs(x = "Intron length, bp", y = NULL) +
+  theme_publication_log10() +
+  scale_color_manual(values = c("#0077BB", "#009E73", "#CC79A7")) +
+  scale_linetype_manual(values = c("solid", "55", "79")) +
+  theme(legend.position = c(0, 1), legend.justification = c(0, 1))
+
+p_introns_length
+```
+
+## Combined figure and export
+
+```{r combined, fig.width=12, fig.height=17.5}
+p_combined <- (p_gene_density + p_exons_count + p_cds_utr + p_exons_length + p_introns_length) +
+  plot_layout(ncol = 1, heights = c(6, 6, 3.75, 3.5, 2.25)) +
+  plot_annotation(tag_levels = "A") &
+  theme(
+    plot.tag          = element_text(size = 18, face = "bold", margin = margin(t = 0, r = 20, b = 6, l = 0)),
+    plot.tag.position = c(0, 1)
+  )
+
+p_combined
+
+# Save PDF (Cairo backend for publication-quality output)
+library(Cairo)
+ggsave(
+  filename = "genomic_features_stats_1.pdf",
+  plot     = p_combined,
+  device   = CairoPDF,
+  width    = 12,
+  height   = 17.5,
+  units    = "in"
+)
+```
+
+### Figure caption
+
+Figure N. Summary of protein-coding genes' features in *Halisarca dujardinii*. (A) Gene density per 100 kb non-overlapping genomic regions. (B) Exon count distribution for protein-coding transcripts. (C) Distributions of transcript elements' lengths and intergenic distances. (D) Exon length distributions. (E) Intron length distributions.
